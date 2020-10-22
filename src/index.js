@@ -48,7 +48,7 @@ ReactDOM.render(
       <Route path="/home">
         <Home />
       </Route>
-      <Redirect from="/" to="/components" />
+      <Redirect from="/" to="/home" />
     </Switch>
   </BrowserRouter>,
   document.getElementById("root")
