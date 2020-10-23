@@ -33,7 +33,7 @@ const NavBar = () => {
       document.documentElement.scrollTop > 99 ||
       document.body.scrollTop > 99
     ) {
-      setColor("bg-info");
+      setColor("navbar-transparent");
     } else if (
       document.documentElement.scrollTop < 100 ||
       document.body.scrollTop < 100

@@ -27,7 +27,7 @@ import Index from "views/Index.js";
 import LandingPage from "views/examples/LandingPage.js";
 import RegisterPage from "views/examples/RegisterPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
-import Home from "views/Blog/Home";
+import Home from "views/dev-portfolio/Home";
 
 ReactDOM.render(
   <BrowserRouter>
