@@ -35,10 +35,10 @@ class Footer extends React.Component {
       <footer className="footer">
         <Container>
           <div className="btn-wrapper profile">
-            <div class="d-flex justify-content-center">
+            <div className="d-flex justify-content-center">
               <h3 className="title">Thanks for stoping by</h3>
             </div>
-            <div class="d-flex justify-content-center">
+            <div className="d-flex justify-content-center">
               <Button
                 className="btn-icon btn-neutral btn-round btn-simple"
                 color="default"
