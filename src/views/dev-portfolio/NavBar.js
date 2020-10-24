@@ -33,7 +33,7 @@ const NavBar = () => {
       document.documentElement.scrollTop > 99 ||
       document.body.scrollTop > 99
     ) {
-      setColor("navbar-transparent");
+      setColor("bg-info");
     } else if (
       document.documentElement.scrollTop < 100 ||
       document.body.scrollTop < 100
@@ -160,7 +160,10 @@ const NavBar = () => {
                   <i className="fab fa-github" />
                   GitHub
                 </DropdownItem>
-                <DropdownItem href="#" target="_blank">
+                <DropdownItem
+                  href="https://docs.google.com/document/d/1hVpluOzUwn-BXJnAFfJcE027QoqxOAHo8Its2R-Zidk/edit"
+                  target="_blank"
+                >
                   <i className="tim-icons icon-attach-87" />
                   Download CV
                 </DropdownItem>
