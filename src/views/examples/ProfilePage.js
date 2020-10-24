@@ -40,7 +40,7 @@ import {
   Row,
   Col,
   UncontrolledTooltip,
-  UncontrolledCarousel
+  UncontrolledCarousel,
 } from "reactstrap";
 
 // core components
@@ -51,18 +51,18 @@ const carouselItems = [
   {
     src: require("assets/img/denys.jpg"),
     altText: "Slide 1",
-    caption: "Big City Life, United States"
+    caption: "Big City Life, United States",
   },
   {
     src: require("assets/img/fabien-bazanegue.jpg"),
     altText: "Slide 2",
-    caption: "Somewhere Beyond, United States"
+    caption: "Somewhere Beyond, United States",
   },
   {
     src: require("assets/img/mark-finn.jpg"),
     altText: "Slide 3",
-    caption: "Stocks, United States"
-  }
+    caption: "Stocks, United States",
+  },
 ];
 
 let ps = null;
@@ -71,7 +71,7 @@ class ProfilePage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      tabs: 1
+      tabs: 1,
     };
   }
   componentDidMount() {
@@ -96,7 +96,7 @@ class ProfilePage extends React.Component {
   toggleTabs = (e, stateName, index) => {
     e.preventDefault();
     this.setState({
-      [stateName]: index
+      [stateName]: index,
     });
   };
   render() {
@@ -171,7 +171,7 @@ class ProfilePage extends React.Component {
                       <img
                         alt="..."
                         className="img-center img-fluid rounded-circle"
-                        src={require("assets/img/mike.jpg")}
+                        src={require("assets/img/mike.png")}
                       />
                       <h4 className="title">Transactions</h4>
                     </CardHeader>
@@ -183,9 +183,9 @@ class ProfilePage extends React.Component {
                         <NavItem>
                           <NavLink
                             className={classnames({
-                              active: this.state.tabs === 1
+                              active: this.state.tabs === 1,
                             })}
-                            onClick={e => this.toggleTabs(e, "tabs", 1)}
+                            onClick={(e) => this.toggleTabs(e, "tabs", 1)}
                             href="#pablo"
                           >
                             Wallet
@@ -194,9 +194,9 @@ class ProfilePage extends React.Component {
                         <NavItem>
                           <NavLink
                             className={classnames({
-                              active: this.state.tabs === 2
+                              active: this.state.tabs === 2,
                             })}
-                            onClick={e => this.toggleTabs(e, "tabs", 2)}
+                            onClick={(e) => this.toggleTabs(e, "tabs", 2)}
                             href="#pablo"
                           >
                             Send
@@ -205,9 +205,9 @@ class ProfilePage extends React.Component {
                         <NavItem>
                           <NavLink
                             className={classnames({
-                              active: this.state.tabs === 3
+                              active: this.state.tabs === 3,
                             })}
-                            onClick={e => this.toggleTabs(e, "tabs", 3)}
+                            onClick={(e) => this.toggleTabs(e, "tabs", 3)}
                             href="#pablo"
                           >
                             News
@@ -327,7 +327,7 @@ class ProfilePage extends React.Component {
                       className="btn-simple"
                       color="primary"
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       <i className="tim-icons icon-book-bookmark" /> Bookmark
                     </Button>
@@ -335,7 +335,7 @@ class ProfilePage extends React.Component {
                       className="btn-simple"
                       color="info"
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       <i className="tim-icons icon-bulb-63" /> Check it!
                     </Button>

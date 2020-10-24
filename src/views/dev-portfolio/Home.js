@@ -65,19 +65,14 @@ const Home = () => {
 
   const carouselItems = [
     {
-      src: require("assets/img/denys.jpg"),
-      altText: "Slide 1",
-      caption: "Big City Life, United States",
+      src: require("assets/img/sheep-render.png"),
+      altText: "sheep 1",
+      caption: "Meh....",
     },
     {
-      src: require("assets/img/fabien-bazanegue.jpg"),
+      src: require("assets/img/that-cold-night.png"),
       altText: "Slide 2",
-      caption: "Somewhere Beyond, United States",
-    },
-    {
-      src: require("assets/img/mark-finn.jpg"),
-      altText: "Slide 3",
-      caption: "Stocks, United States",
+      caption: "That cold night",
     },
   ];
 
@@ -162,7 +157,7 @@ const Home = () => {
                     <img
                       alt="..."
                       className="img-center img-fluid rounded-circle"
-                      src={require("assets/img/mike.jpg")}
+                      src={require("assets/img/mike.png")}
                     />
                     <h4 className="title">Skills Snapshot</h4>
                   </CardHeader>
@@ -307,11 +302,10 @@ const Home = () => {
                 <h1 className="profile-title text-left">Projects</h1>
                 <h5 className="text-on-back">02</h5>
                 <p className="profile-description text-left">
-                  An artist of considerable range, Ryan — the name taken by
-                  Melbourne-raised, Brooklyn-based Nick Murphy — writes,
-                  performs and records all of his own music, giving it a warm,
-                  intimate feel with a solid groove structure. An artist of
-                  considerable range.
+                  Although I am working in XR for last couple of years but game
+                  developmet has a soft corner in my heart. That's why I like
+                  reading and learning more about computer graphics and 3D.
+                  Apart from XR I have fair hands on experience of the web.
                 </p>
                 <div className="btn-wrapper pt-3">
                   <Button
@@ -320,15 +314,7 @@ const Home = () => {
                     href="#pablo"
                     onClick={(e) => e.preventDefault()}
                   >
-                    <i className="tim-icons icon-book-bookmark" /> Bookmark
-                  </Button>
-                  <Button
-                    className="btn-simple"
-                    color="info"
-                    href="#pablo"
-                    onClick={(e) => e.preventDefault()}
-                  >
-                    <i className="tim-icons icon-bulb-63" /> Check it!
+                    <i className="tim-icons icon-bulb-63" /> See More
                   </Button>
                 </div>
               </Col>
@@ -350,13 +336,13 @@ const Home = () => {
                         <Col md="6">
                           <FormGroup>
                             <label>Your Name</label>
-                            <Input defaultValue="Mike" type="text" />
+                            <Input defaultValue="" type="text" />
                           </FormGroup>
                         </Col>
                         <Col md="6">
                           <FormGroup>
                             <label>Email address</label>
-                            <Input placeholder="mike@email.com" type="email" />
+                            <Input placeholder="" type="email" />
                           </FormGroup>
                         </Col>
                       </Row>
@@ -364,13 +350,13 @@ const Home = () => {
                         <Col md="6">
                           <FormGroup>
                             <label>Phone</label>
-                            <Input defaultValue="001-12321345" type="text" />
+                            <Input defaultValue="" type="text" />
                           </FormGroup>
                         </Col>
                         <Col md="6">
                           <FormGroup>
                             <label>Company</label>
-                            <Input defaultValue="CreativeTim" type="text" />
+                            <Input defaultValue="" type="text" />
                           </FormGroup>
                         </Col>
                       </Row>
@@ -408,11 +394,10 @@ const Home = () => {
                     <i className="tim-icons icon-square-pin" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Find us at the office</h4>
+                    <h4 className="info-title">Current Location</h4>
                     <p>
-                      Bld Mihail Kogalniceanu, nr. 8, <br />
-                      7652 Bucharest, <br />
-                      Romania
+                      Delhi/NCR, <br />
+                      India <br />
                     </p>
                   </div>
                 </div>
@@ -421,11 +406,10 @@ const Home = () => {
                     <i className="tim-icons icon-mobile" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Give us a ring</h4>
+                    <h4 className="info-title">Give a ring</h4>
                     <p>
-                      Michael Jordan <br />
-                      +40 762 321 762 <br />
-                      Mon - Fri, 8:00-22:00
+                      +91-9953092721 <br />
+                      Mon - Fri, 10:00-18:00
                     </p>
                   </div>
                 </div>
