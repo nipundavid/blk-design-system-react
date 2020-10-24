@@ -114,13 +114,13 @@ const Home = () => {
                   at Nagarro where I got chance to expand my horizon and I was
                   able to add few other skills in my resume. Here you will find
                   the glimpse of what I have learned so far during my time in IT
-                  industry. I hope you will appreciate it.
+                  industry.
                 </p>
 
                 <div className="btn-wrapper profile pt-3">
                   <Button
                     className="btn-icon btn-round"
-                    color="linkedin"
+                    color="twitter"
                     href="https://www.linkedin.com/in/nipundavid/"
                     id="tooltip639225725"
                     target="_blank"
@@ -164,7 +164,7 @@ const Home = () => {
                       className="img-center img-fluid rounded-circle"
                       src={require("assets/img/mike.jpg")}
                     />
-                    <h4 className="title">Transactions</h4>
+                    <h4 className="title">Skills Snapshot</h4>
                   </CardHeader>
                   <CardBody>
                     <Nav
@@ -179,7 +179,7 @@ const Home = () => {
                           onClick={(e) => toggleTabs(e, 1)}
                           href="#pablo"
                         >
-                          Wallet
+                          XR
                         </NavLink>
                       </NavItem>
                       <NavItem>
@@ -190,7 +190,7 @@ const Home = () => {
                           onClick={(e) => toggleTabs(e, 2)}
                           href="#pablo"
                         >
-                          Send
+                          Web
                         </NavLink>
                       </NavItem>
                       <NavItem>
@@ -201,7 +201,7 @@ const Home = () => {
                           onClick={(e) => toggleTabs(e, 3)}
                           href="#pablo"
                         >
-                          News
+                          Tools
                         </NavLink>
                       </NavItem>
                     </Nav>
