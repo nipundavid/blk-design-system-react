@@ -200,7 +200,7 @@ const Home = () => {
                         </NavLink>
                       </NavItem>
                     </Nav>
-                    <TabContent
+                    {/* <TabContent
                       className="tab-subcategories"
                       activeTab={"tab" + tabs}
                     >
@@ -283,7 +283,7 @@ const Home = () => {
                           </tbody>
                         </Table>
                       </TabPane>
-                    </TabContent>
+                    </TabContent> */}
                   </CardBody>
                 </Card>
               </Col>
