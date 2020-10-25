@@ -135,7 +135,7 @@ const Home = () => {
                     <CardHeader>
                       <img
                         alt="..."
-                        className="img-center img-fluid rounded-circle"
+                        className="img-center img-fluid rounded-circle shadow-lg"
                         src={require("assets/img/mike.png")}
                       />
                       <h4 className="title">Skills Snapshot</h4>
@@ -198,7 +198,7 @@ const Home = () => {
                                 <td>
                                   <img
                                     alt="..."
-                                    className="img-center img-fluid shadow-lg "
+                                    className="img-center img-fluid shadow-lg"
                                     src={require("assets/img/arkit.png")}
                                   />
                                 </td>

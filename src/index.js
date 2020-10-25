@@ -28,6 +28,7 @@ import LandingPage from "views/examples/LandingPage.js";
 import RegisterPage from "views/examples/RegisterPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
 import Home from "views/dev-portfolio/Home";
+import Blogs from "views/dev-portfolio/Blogs";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -47,6 +48,9 @@ ReactDOM.render(
       />
       <Route path="/home">
         <Home />
+      </Route>
+      <Route path="/blogs">
+        <Blogs />
       </Route>
       <Redirect from="/" to="/home" />
     </Switch>

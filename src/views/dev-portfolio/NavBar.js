@@ -110,14 +110,7 @@ const NavBar = () => {
           </div>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
-                Projects
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
-                Blogs
-              </NavLink>
+              <NavLink href="/blogs">Blogs</NavLink>
             </NavItem>
           </Nav>
           <Nav navbar>
