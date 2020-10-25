@@ -104,7 +104,7 @@ const Home = () => {
                   <h1 className="profile-title text-left">Nipun David</h1>
                   <h5 className="text-on-back">01</h5>
                   <p className="profile-description">
-                    Hi, Welcome to my website. After compeleting engineering I
+                    Hi, welcome to my website. After completing engineering I
                     started as a game developer and then switched gear to
                     Augmented Reality and Virtual Reality. Currently I am
                     working at Nagarro where I got chance to expand my horizon
@@ -349,10 +349,10 @@ const Home = () => {
                 <h1 className="profile-title text-left">Projects</h1>
                 <h5 className="text-on-back">02</h5>
                 <p className="profile-description text-left">
-                  Although I am working in XR for last couple of years but game
-                  developmet has a soft corner in my heart. That's why I like
+                  Although I am working in XR for last couple of years but I
+                  have a soft corner for game development. That's why I like
                   reading and learning more about computer graphics and 3D.
-                  Apart from XR I have fair hands on experience of the web.
+                  Apart from XR, I have fair hands on experience of the web.
                 </p>
                 <div className="btn-wrapper pt-3">
                   <Button
