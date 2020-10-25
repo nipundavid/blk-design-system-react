@@ -27,12 +27,9 @@ import Footer from "components/Footer/Footer.js";
 import PerfectScrollbar from "perfect-scrollbar";
 
 const Home = () => {
-  const [squareState, setSquareState] = useState({});
   const [tabs, setTabs] = useState(1);
 
   useEffect(() => {
-    document.documentElement.addEventListener("mousemove", followCursor);
-
     if (navigator.platform.indexOf("Win") > -1) {
       document.documentElement.className += " perfect-scrollbar-on";
       document.documentElement.classList.remove("perfect-scrollbar-off");
@@ -43,25 +40,6 @@ const Home = () => {
     }
     document.body.classList.toggle("profile-page");
   }, []);
-
-  const followCursor = (event) => {
-    let posX = event.clientX - window.innerWidth / 2;
-    let posY = event.clientY - window.innerWidth / 6;
-    setSquareState({
-      squares1to6:
-        "perspective(500px) rotateY(" +
-        posX * 0.05 +
-        "deg) rotateX(" +
-        posY * -0.05 +
-        "deg)",
-      squares7and8:
-        "perspective(500px) rotateY(" +
-        posX * 0.02 +
-        "deg) rotateX(" +
-        posY * -0.02 +
-        "deg)",
-    });
-  };
 
   const carouselItems = [
     {
@@ -98,7 +76,7 @@ const Home = () => {
             src={require("assets/img/path4.png")}
           />
           <section className="section">
-            <Container className="align-items-center">
+            <Container className="align-items-center ">
               <Row>
                 <Col lg="6" md="6">
                   <h1 className="profile-title text-left">Nipun David</h1>
