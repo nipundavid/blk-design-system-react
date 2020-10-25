@@ -1,8 +1,8 @@
 /*!
 
-=========================================================
+
 * BLK Design System React - v1.1.0
-=========================================================
+
 
 * Product Page: https://www.creative-tim.com/product/blk-design-system-react
 * Copyright 2020 Creative Tim (https://www.creative-tim.com)
@@ -10,7 +10,7 @@
 
 * Coded by Creative Tim
 
-=========================================================
+
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
@@ -33,14 +33,14 @@ import {
   InputGroup,
   Container,
   Row,
-  Col
+  Col,
 } from "reactstrap";
 
 class Basics extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      inputFocus: false
+      inputFocus: false,
     };
   }
   componentDidMount() {
@@ -50,13 +50,13 @@ class Basics extends React.Component {
       start: [40],
       connect: [true, false],
       step: 1,
-      range: { min: 0, max: 100 }
+      range: { min: 0, max: 100 },
     });
     Slider.create(slider2, {
       start: [20, 60],
       connect: [false, true, false],
       step: 1,
-      range: { min: 0, max: 100 }
+      range: { min: 0, max: 100 },
     });
   }
   render() {
@@ -174,7 +174,7 @@ class Basics extends React.Component {
               <Col lg="3" sm="6">
                 <InputGroup
                   className={classnames({
-                    "input-group-focus": this.state.inputFocus
+                    "input-group-focus": this.state.inputFocus,
                   })}
                 >
                   <InputGroupAddon addonType="prepend">
@@ -185,8 +185,8 @@ class Basics extends React.Component {
                   <Input
                     placeholder="Left Font Awesome Icon"
                     type="text"
-                    onFocus={e => this.setState({ inputFocus: true })}
-                    onBlur={e => this.setState({ inputFocus: false })}
+                    onFocus={(e) => this.setState({ inputFocus: true })}
+                    onBlur={(e) => this.setState({ inputFocus: false })}
                   />
                 </InputGroup>
               </Col>

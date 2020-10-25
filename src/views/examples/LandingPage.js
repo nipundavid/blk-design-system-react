@@ -1,8 +1,8 @@
 /*!
 
-=========================================================
+
 * BLK Design System React - v1.1.0
-=========================================================
+
 
 * Product Page: https://www.creative-tim.com/product/blk-design-system-react
 * Copyright 2020 Creative Tim (https://www.creative-tim.com)
@@ -10,7 +10,7 @@
 
 * Coded by Creative Tim
 
-=========================================================
+
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
@@ -30,7 +30,7 @@ import {
   ListGroup,
   Container,
   Row,
-  Col
+  Col,
 } from "reactstrap";
 
 // core components
@@ -102,7 +102,7 @@ class LandingPage extends React.Component {
                       className="btn-link"
                       color="success"
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                       size="sm"
                     >
                       <i className="tim-icons icon-minimal-right" />
@@ -114,7 +114,7 @@ class LandingPage extends React.Component {
                         className="btn-icon btn-simple btn-round btn-neutral"
                         color="default"
                         href="#pablo"
-                        onClick={e => e.preventDefault()}
+                        onClick={(e) => e.preventDefault()}
                       >
                         <i className="fab fa-twitter" />
                       </Button>
@@ -122,7 +122,7 @@ class LandingPage extends React.Component {
                         className="btn-icon btn-simple btn-round btn-neutral"
                         color="default"
                         href="#pablo"
-                        onClick={e => e.preventDefault()}
+                        onClick={(e) => e.preventDefault()}
                       >
                         <i className="fab fa-dribbble" />
                       </Button>
@@ -130,7 +130,7 @@ class LandingPage extends React.Component {
                         className="btn-icon btn-simple btn-round btn-neutral"
                         color="default"
                         href="#pablo"
-                        onClick={e => e.preventDefault()}
+                        onClick={(e) => e.preventDefault()}
                       >
                         <i className="fab fa-facebook" />
                       </Button>
@@ -264,7 +264,7 @@ class LandingPage extends React.Component {
                       <a
                         className="font-weight-bold text-info mt-5"
                         href="#pablo"
-                        onClick={e => e.preventDefault()}
+                        onClick={(e) => e.preventDefault()}
                       >
                         Show all{" "}
                         <i className="tim-icons icon-minimal-right text-info" />

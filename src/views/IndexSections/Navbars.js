@@ -1,8 +1,8 @@
 /*!
 
-=========================================================
+
 * BLK Design System React - v1.1.0
-=========================================================
+
 
 * Product Page: https://www.creative-tim.com/product/blk-design-system-react
 * Copyright 2020 Creative Tim (https://www.creative-tim.com)
@@ -10,7 +10,7 @@
 
 * Coded by Creative Tim
 
-=========================================================
+
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
@@ -30,7 +30,7 @@ import {
   Nav,
   Container,
   Row,
-  Col
+  Col,
 } from "reactstrap";
 
 class Navbars extends React.Component {
@@ -44,7 +44,10 @@ class Navbars extends React.Component {
               <h4>Menu</h4>
               <Navbar className="bg-primary" expand="lg">
                 <Container>
-                  <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+                  <NavbarBrand
+                    href="#pablo"
+                    onClick={(e) => e.preventDefault()}
+                  >
                     Menu
                   </NavbarBrand>
                   <button className="navbar-toggler" aria-expanded={false}>
@@ -57,7 +60,7 @@ class Navbars extends React.Component {
                       <NavItem className="active">
                         <NavLink
                           href="#pablo"
-                          onClick={e => e.preventDefault()}
+                          onClick={(e) => e.preventDefault()}
                         >
                           <p>Link</p>
                         </NavLink>
@@ -65,7 +68,7 @@ class Navbars extends React.Component {
                       <NavItem>
                         <NavLink
                           href="#pablo"
-                          onClick={e => e.preventDefault()}
+                          onClick={(e) => e.preventDefault()}
                         >
                           <p>Link</p>
                         </NavLink>
@@ -86,19 +89,19 @@ class Navbars extends React.Component {
                         <DropdownMenu aria-labelledby="navbarDropdownMenuLink">
                           <DropdownItem
                             href="#pablo"
-                            onClick={e => e.preventDefault()}
+                            onClick={(e) => e.preventDefault()}
                           >
                             Action
                           </DropdownItem>
                           <DropdownItem
                             href="#pablo"
-                            onClick={e => e.preventDefault()}
+                            onClick={(e) => e.preventDefault()}
                           >
                             Another action
                           </DropdownItem>
                           <DropdownItem
                             href="#pablo"
-                            onClick={e => e.preventDefault()}
+                            onClick={(e) => e.preventDefault()}
                           >
                             Something else here
                           </DropdownItem>
@@ -113,7 +116,10 @@ class Navbars extends React.Component {
               <h4>Menu with Icons</h4>
               <Navbar className="bg-info" expand="lg">
                 <Container>
-                  <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+                  <NavbarBrand
+                    href="#pablo"
+                    onClick={(e) => e.preventDefault()}
+                  >
                     Icons
                   </NavbarBrand>
                   <button className="navbar-toggler" aria-expanded={false}>
@@ -126,7 +132,7 @@ class Navbars extends React.Component {
                       <NavItem>
                         <NavLink
                           href="#pablo"
-                          onClick={e => e.preventDefault()}
+                          onClick={(e) => e.preventDefault()}
                         >
                           <i
                             aria-hidden={true}
@@ -137,7 +143,7 @@ class Navbars extends React.Component {
                       <NavItem>
                         <NavLink
                           href="#pablo"
-                          onClick={e => e.preventDefault()}
+                          onClick={(e) => e.preventDefault()}
                         >
                           <i
                             aria-hidden={true}
@@ -153,7 +159,7 @@ class Navbars extends React.Component {
                           href="#pablo"
                           id="navbarDropdownMenuLink"
                           nav
-                          onClick={e => e.preventDefault()}
+                          onClick={(e) => e.preventDefault()}
                         >
                           <i
                             aria-hidden={true}
@@ -167,33 +173,33 @@ class Navbars extends React.Component {
                           <DropdownItem header>Dropdown header</DropdownItem>
                           <DropdownItem
                             href="#pablo"
-                            onClick={e => e.preventDefault()}
+                            onClick={(e) => e.preventDefault()}
                           >
                             Action
                           </DropdownItem>
                           <DropdownItem
                             href="#pablo"
-                            onClick={e => e.preventDefault()}
+                            onClick={(e) => e.preventDefault()}
                           >
                             Another action
                           </DropdownItem>
                           <DropdownItem
                             href="#pablo"
-                            onClick={e => e.preventDefault()}
+                            onClick={(e) => e.preventDefault()}
                           >
                             Something else here
                           </DropdownItem>
                           <div className="divider" />
                           <DropdownItem
                             href="#pablo"
-                            onClick={e => e.preventDefault()}
+                            onClick={(e) => e.preventDefault()}
                           >
                             Separated link
                           </DropdownItem>
                           <div className="divider" />
                           <DropdownItem
                             href="#pablo"
-                            onClick={e => e.preventDefault()}
+                            onClick={(e) => e.preventDefault()}
                           >
                             One more separated link
                           </DropdownItem>
@@ -213,7 +219,10 @@ class Navbars extends React.Component {
             <Navbar className="bg-primary" expand="lg">
               <Container>
                 <div className="navbar-translate">
-                  <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+                  <NavbarBrand
+                    href="#pablo"
+                    onClick={(e) => e.preventDefault()}
+                  >
                     Primary color
                   </NavbarBrand>
                   <button className="navbar-toggler" aria-expanded={false}>
@@ -225,19 +234,28 @@ class Navbars extends React.Component {
                 <Collapse navbar isOpen={false}>
                   <Nav className="ml-auto" navbar>
                     <NavItem className="active">
-                      <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                      <NavLink
+                        href="#pablo"
+                        onClick={(e) => e.preventDefault()}
+                      >
                         <i className="tim-icons icon-world" />
                         Discover
                       </NavLink>
                     </NavItem>
                     <NavItem>
-                      <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                      <NavLink
+                        href="#pablo"
+                        onClick={(e) => e.preventDefault()}
+                      >
                         <i className="tim-icons icon-single-02" />
                         Profile
                       </NavLink>
                     </NavItem>
                     <NavItem>
-                      <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                      <NavLink
+                        href="#pablo"
+                        onClick={(e) => e.preventDefault()}
+                      >
                         <i className="tim-icons icon-settings-gear-63" />
                         Settings
                       </NavLink>
@@ -251,7 +269,10 @@ class Navbars extends React.Component {
             <Navbar className="bg-info" expand="lg">
               <Container>
                 <div className="navbar-translate">
-                  <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+                  <NavbarBrand
+                    href="#pablo"
+                    onClick={(e) => e.preventDefault()}
+                  >
                     Info Color
                   </NavbarBrand>
                   <button className="navbar-toggler" aria-expanded={false}>
@@ -263,17 +284,26 @@ class Navbars extends React.Component {
                 <Collapse navbar isOpen={false}>
                   <Nav className="ml-auto" navbar>
                     <NavItem className="active">
-                      <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                      <NavLink
+                        href="#pablo"
+                        onClick={(e) => e.preventDefault()}
+                      >
                         Discover
                       </NavLink>
                     </NavItem>
                     <NavItem>
-                      <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                      <NavLink
+                        href="#pablo"
+                        onClick={(e) => e.preventDefault()}
+                      >
                         Profile
                       </NavLink>
                     </NavItem>
                     <NavItem>
-                      <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                      <NavLink
+                        href="#pablo"
+                        onClick={(e) => e.preventDefault()}
+                      >
                         Settings
                       </NavLink>
                     </NavItem>
@@ -286,7 +316,10 @@ class Navbars extends React.Component {
             <Navbar className="bg-success" expand="lg">
               <Container>
                 <div className="navbar-translate">
-                  <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+                  <NavbarBrand
+                    href="#pablo"
+                    onClick={(e) => e.preventDefault()}
+                  >
                     Success Color
                   </NavbarBrand>
                   <button className="navbar-toggler" aria-expanded={false}>
@@ -298,17 +331,26 @@ class Navbars extends React.Component {
                 <Collapse navbar isOpen={false}>
                   <Nav className="ml-auto" navbar>
                     <NavItem className="active">
-                      <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                      <NavLink
+                        href="#pablo"
+                        onClick={(e) => e.preventDefault()}
+                      >
                         <i className="tim-icons icon-world" />
                       </NavLink>
                     </NavItem>
                     <NavItem>
-                      <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                      <NavLink
+                        href="#pablo"
+                        onClick={(e) => e.preventDefault()}
+                      >
                         <i className="tim-icons icon-single-02" />
                       </NavLink>
                     </NavItem>
                     <NavItem>
-                      <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                      <NavLink
+                        href="#pablo"
+                        onClick={(e) => e.preventDefault()}
+                      >
                         <i className="tim-icons icon-settings-gear-63" />
                       </NavLink>
                     </NavItem>
@@ -321,7 +363,10 @@ class Navbars extends React.Component {
             <Navbar className="bg-warning" expand="lg">
               <Container>
                 <div className="navbar-translate">
-                  <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+                  <NavbarBrand
+                    href="#pablo"
+                    onClick={(e) => e.preventDefault()}
+                  >
                     Warning Color
                   </NavbarBrand>
                   <button className="navbar-toggler" aria-expanded={false}>
@@ -333,22 +378,34 @@ class Navbars extends React.Component {
                 <Collapse navbar isOpen={false}>
                   <Nav className="ml-auto" navbar>
                     <NavItem>
-                      <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                      <NavLink
+                        href="#pablo"
+                        onClick={(e) => e.preventDefault()}
+                      >
                         <i className="fab fa-facebook-square" />
                       </NavLink>
                     </NavItem>
                     <NavItem>
-                      <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                      <NavLink
+                        href="#pablo"
+                        onClick={(e) => e.preventDefault()}
+                      >
                         <i className="fab fa-twitter" />
                       </NavLink>
                     </NavItem>
                     <NavItem>
-                      <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                      <NavLink
+                        href="#pablo"
+                        onClick={(e) => e.preventDefault()}
+                      >
                         <i className="fab fa-google-plus" />
                       </NavLink>
                     </NavItem>
                     <NavItem>
-                      <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                      <NavLink
+                        href="#pablo"
+                        onClick={(e) => e.preventDefault()}
+                      >
                         <i className="fab fa-instagram" />
                       </NavLink>
                     </NavItem>
@@ -361,7 +418,10 @@ class Navbars extends React.Component {
             <Navbar className="bg-danger" expand="lg">
               <Container>
                 <div className="navbar-translate">
-                  <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+                  <NavbarBrand
+                    href="#pablo"
+                    onClick={(e) => e.preventDefault()}
+                  >
                     Danger Color
                   </NavbarBrand>
                   <button className="navbar-toggler" aria-expanded={false}>
@@ -373,19 +433,28 @@ class Navbars extends React.Component {
                 <Collapse navbar isOpen={false}>
                   <Nav className="ml-auto" navbar>
                     <NavItem>
-                      <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                      <NavLink
+                        href="#pablo"
+                        onClick={(e) => e.preventDefault()}
+                      >
                         <i className="fab fa-facebook-square" />
                         Share
                       </NavLink>
                     </NavItem>
                     <NavItem>
-                      <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                      <NavLink
+                        href="#pablo"
+                        onClick={(e) => e.preventDefault()}
+                      >
                         <i className="fab fa-twitter" />
                         Tweet
                       </NavLink>
                     </NavItem>
                     <NavItem>
-                      <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                      <NavLink
+                        href="#pablo"
+                        onClick={(e) => e.preventDefault()}
+                      >
                         <i className="fab fa-pinterest" />
                         Pin
                       </NavLink>
@@ -399,7 +468,10 @@ class Navbars extends React.Component {
             <Navbar className="navbar-transparent" expand="lg">
               <Container>
                 <div className="navbar-translate">
-                  <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+                  <NavbarBrand
+                    href="#pablo"
+                    onClick={(e) => e.preventDefault()}
+                  >
                     Transparent
                   </NavbarBrand>
                   <button className="navbar-toggler" aria-expanded={false}>
@@ -411,19 +483,28 @@ class Navbars extends React.Component {
                 <Collapse navbar isOpen={false}>
                   <Nav className="ml-auto" navbar>
                     <NavItem>
-                      <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                      <NavLink
+                        href="#pablo"
+                        onClick={(e) => e.preventDefault()}
+                      >
                         <i className="fab fa-facebook-square" />
                         Facebook
                       </NavLink>
                     </NavItem>
                     <NavItem>
-                      <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                      <NavLink
+                        href="#pablo"
+                        onClick={(e) => e.preventDefault()}
+                      >
                         <i className="fab fa-twitter" />
                         Twitter
                       </NavLink>
                     </NavItem>
                     <NavItem>
-                      <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                      <NavLink
+                        href="#pablo"
+                        onClick={(e) => e.preventDefault()}
+                      >
                         <i className="fab fa-instagram" />
                         Instagram
                       </NavLink>

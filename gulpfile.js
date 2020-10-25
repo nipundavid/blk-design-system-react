@@ -1,16 +1,16 @@
 const gulp = require("gulp");
 const gap = require("gulp-append-prepend");
 
-gulp.task("licenses", async function() {
+gulp.task("licenses", async function () {
   // this is to add Creative Tim licenses in the production mode for the minified js
   gulp
     .src("build/static/js/*chunk.js", { base: "./" })
     .pipe(
       gap.prependText(`/*!
 
-=========================================================
+
 * BLK Design System React - v1.1.0
-=========================================================
+
 
 * Product Page: https://www.creative-tim.com/product/blk-design-system-react
 * Copyright 2020 Creative Tim (https://www.creative-tim.com)
@@ -18,7 +18,7 @@ gulp.task("licenses", async function() {
 
 * Coded by Creative Tim
 
-=========================================================
+
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
@@ -32,9 +32,9 @@ gulp.task("licenses", async function() {
     .pipe(
       gap.prependText(`<!--
 
-=========================================================
+
 * BLK Design System React - v1.1.0
-=========================================================
+
 
 * Product Page: https://www.creative-tim.com/product/blk-design-system-react
 * Copyright 2020 Creative Tim (https://www.creative-tim.com)
@@ -42,7 +42,7 @@ gulp.task("licenses", async function() {
 
 * Coded by Creative Tim
 
-=========================================================
+
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
@@ -56,9 +56,9 @@ gulp.task("licenses", async function() {
     .pipe(
       gap.prependText(`/*!
 
-=========================================================
+
 * BLK Design System React - v1.1.0
-=========================================================
+
 
 * Product Page: https://www.creative-tim.com/product/blk-design-system-react
 * Copyright 2020 Creative Tim (https://www.creative-tim.com)
@@ -66,7 +66,7 @@ gulp.task("licenses", async function() {
 
 * Coded by Creative Tim
 
-=========================================================
+
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 

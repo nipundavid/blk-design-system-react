@@ -1,8 +1,8 @@
 /*!
 
-=========================================================
+
 * BLK Design System React - v1.1.0
-=========================================================
+
 
 * Product Page: https://www.creative-tim.com/product/blk-design-system-react
 * Copyright 2020 Creative Tim (https://www.creative-tim.com)
@@ -10,7 +10,7 @@
 
 * Coded by Creative Tim
 
-=========================================================
+
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
@@ -38,25 +38,25 @@ import {
   InputGroupAddon,
   InputGroupText,
   Label,
-  UncontrolledCarousel
+  UncontrolledCarousel,
 } from "reactstrap";
 
 const carouselItems = [
   {
     src: require("assets/img/denys.jpg"),
     altText: "Slide 1",
-    caption: ""
+    caption: "",
   },
   {
     src: require("assets/img/fabien-bazanegue.jpg"),
     altText: "Slide 2",
-    caption: ""
+    caption: "",
   },
   {
     src: require("assets/img/mark-finn.jpg"),
     altText: "Slide 3",
-    caption: ""
-  }
+    caption: "",
+  },
 ];
 
 class JavaScript extends React.Component {
@@ -65,12 +65,12 @@ class JavaScript extends React.Component {
     this.state = {
       demoModal: false,
       miniModal: false,
-      formModal: false
+      formModal: false,
     };
   }
-  toggleModal = modalState => {
+  toggleModal = (modalState) => {
     this.setState({
-      [modalState]: !this.state[modalState]
+      [modalState]: !this.state[modalState],
     });
   };
   render() {
@@ -207,7 +207,7 @@ class JavaScript extends React.Component {
                     className="btn-neutral btn-icon"
                     color="default"
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
+                    onClick={(e) => e.preventDefault()}
                   >
                     <img alt="..." src={require("assets/img/github.svg")} />
                   </Button>
@@ -215,7 +215,7 @@ class JavaScript extends React.Component {
                     className="btn-neutral btn-icon"
                     color="default"
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
+                    onClick={(e) => e.preventDefault()}
                   >
                     <img alt="..." src={require("assets/img/google.svg")} />
                   </Button>
@@ -227,7 +227,7 @@ class JavaScript extends React.Component {
                   <FormGroup className="mb-3">
                     <InputGroup
                       className={classnames("input-group-alternative", {
-                        "input-group-focus": this.state.emailFocus
+                        "input-group-focus": this.state.emailFocus,
                       })}
                     >
                       <InputGroupAddon addonType="prepend">
@@ -238,15 +238,15 @@ class JavaScript extends React.Component {
                       <Input
                         placeholder="Email"
                         type="email"
-                        onFocus={e => this.setState({ emailFocus: true })}
-                        onBlur={e => this.setState({ emailFocus: false })}
+                        onFocus={(e) => this.setState({ emailFocus: true })}
+                        onBlur={(e) => this.setState({ emailFocus: false })}
                       />
                     </InputGroup>
                   </FormGroup>
                   <FormGroup>
                     <InputGroup
                       className={classnames("input-group-alternative", {
-                        "input-group-focus": this.state.passwordFocus
+                        "input-group-focus": this.state.passwordFocus,
                       })}
                     >
                       <InputGroupAddon addonType="prepend">
@@ -257,8 +257,8 @@ class JavaScript extends React.Component {
                       <Input
                         placeholder="Password"
                         type="password"
-                        onFocus={e => this.setState({ passwordFocus: true })}
-                        onBlur={e => this.setState({ passwordFocus: false })}
+                        onFocus={(e) => this.setState({ passwordFocus: true })}
+                        onBlur={(e) => this.setState({ passwordFocus: false })}
                       />
                     </InputGroup>
                   </FormGroup>
@@ -289,7 +289,7 @@ class JavaScript extends React.Component {
                   <ReactDatetime
                     inputProps={{
                       className: "form-control",
-                      placeholder: "Date Picker Here"
+                      placeholder: "Date Picker Here",
                     }}
                   />
                 </FormGroup>

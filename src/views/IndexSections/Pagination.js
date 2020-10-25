@@ -1,8 +1,8 @@
 /*!
 
-=========================================================
+
 * BLK Design System React - v1.1.0
-=========================================================
+
 
 * Product Page: https://www.creative-tim.com/product/blk-design-system-react
 * Copyright 2020 Creative Tim (https://www.creative-tim.com)
@@ -10,7 +10,7 @@
 
 * Coded by Creative Tim
 
-=========================================================
+
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
@@ -29,20 +29,20 @@ import {
   Progress,
   Container,
   Row,
-  Col
+  Col,
 } from "reactstrap";
 
 class PaginationSection extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      pills: 1
+      pills: 1,
     };
   }
   toggleTabs = (e, stateName, index) => {
     e.preventDefault();
     this.setState({
-      [stateName]: index
+      [stateName]: index,
     });
   };
   render() {
@@ -76,9 +76,9 @@ class PaginationSection extends React.Component {
                 <NavItem>
                   <NavLink
                     className={classnames({
-                      "active show": this.state.pills === 1
+                      "active show": this.state.pills === 1,
                     })}
-                    onClick={e => this.toggleTabs(e, "pills", 1)}
+                    onClick={(e) => this.toggleTabs(e, "pills", 1)}
                     href="#pablo"
                   >
                     <i className="tim-icons icon-atom" />
@@ -88,9 +88,9 @@ class PaginationSection extends React.Component {
                 <NavItem>
                   <NavLink
                     className={classnames({
-                      "active show": this.state.pills === 2
+                      "active show": this.state.pills === 2,
                     })}
-                    onClick={e => this.toggleTabs(e, "pills", 2)}
+                    onClick={(e) => this.toggleTabs(e, "pills", 2)}
                     href="#pablo"
                   >
                     <i className="tim-icons icon-chat-33" />
@@ -100,9 +100,9 @@ class PaginationSection extends React.Component {
                 <NavItem>
                   <NavLink
                     className={classnames({
-                      "active show": this.state.pills === 3
+                      "active show": this.state.pills === 3,
                     })}
-                    onClick={e => this.toggleTabs(e, "pills", 3)}
+                    onClick={(e) => this.toggleTabs(e, "pills", 3)}
                     href="#pablo"
                   >
                     <i className="tim-icons icon-settings-gear-63" />
@@ -120,7 +120,7 @@ class PaginationSection extends React.Component {
                 <PaginationItem className="active">
                   <PaginationLink
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
+                    onClick={(e) => e.preventDefault()}
                   >
                     1
                   </PaginationLink>
@@ -128,7 +128,7 @@ class PaginationSection extends React.Component {
                 <PaginationItem>
                   <PaginationLink
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
+                    onClick={(e) => e.preventDefault()}
                   >
                     2
                   </PaginationLink>
@@ -136,7 +136,7 @@ class PaginationSection extends React.Component {
                 <PaginationItem>
                   <PaginationLink
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
+                    onClick={(e) => e.preventDefault()}
                   >
                     3
                   </PaginationLink>
@@ -144,7 +144,7 @@ class PaginationSection extends React.Component {
                 <PaginationItem>
                   <PaginationLink
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
+                    onClick={(e) => e.preventDefault()}
                   >
                     4
                   </PaginationLink>
@@ -152,7 +152,7 @@ class PaginationSection extends React.Component {
                 <PaginationItem>
                   <PaginationLink
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
+                    onClick={(e) => e.preventDefault()}
                   >
                     5
                   </PaginationLink>
@@ -166,7 +166,7 @@ class PaginationSection extends React.Component {
                   <PaginationLink
                     aria-label="Previous"
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
+                    onClick={(e) => e.preventDefault()}
                   >
                     <span aria-hidden={true}>
                       <i
@@ -179,7 +179,7 @@ class PaginationSection extends React.Component {
                 <PaginationItem>
                   <PaginationLink
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
+                    onClick={(e) => e.preventDefault()}
                   >
                     1
                   </PaginationLink>
@@ -187,7 +187,7 @@ class PaginationSection extends React.Component {
                 <PaginationItem className="active">
                   <PaginationLink
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
+                    onClick={(e) => e.preventDefault()}
                   >
                     2
                   </PaginationLink>
@@ -195,7 +195,7 @@ class PaginationSection extends React.Component {
                 <PaginationItem>
                   <PaginationLink
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
+                    onClick={(e) => e.preventDefault()}
                   >
                     3
                   </PaginationLink>
@@ -204,7 +204,7 @@ class PaginationSection extends React.Component {
                   <PaginationLink
                     aria-label="Next"
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
+                    onClick={(e) => e.preventDefault()}
                   >
                     <span aria-hidden={true}>
                       <i

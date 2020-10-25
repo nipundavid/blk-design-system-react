@@ -1,8 +1,8 @@
 /*!
 
-=========================================================
+
 * BLK Design System React - v1.1.0
-=========================================================
+
 
 * Product Page: https://www.creative-tim.com/product/blk-design-system-react
 * Copyright 2020 Creative Tim (https://www.creative-tim.com)
@@ -10,7 +10,7 @@
 
 * Coded by Creative Tim
 
-=========================================================
+
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
@@ -29,7 +29,7 @@ import {
   Container,
   Row,
   Col,
-  UncontrolledTooltip
+  UncontrolledTooltip,
 } from "reactstrap";
 
 class PagesNavbar extends React.Component {
@@ -37,7 +37,7 @@ class PagesNavbar extends React.Component {
     super(props);
     this.state = {
       collapseOpen: false,
-      color: "navbar-transparent"
+      color: "navbar-transparent",
     };
   }
   componentDidMount() {
@@ -52,31 +52,31 @@ class PagesNavbar extends React.Component {
       document.body.scrollTop > 99
     ) {
       this.setState({
-        color: "bg-info"
+        color: "bg-info",
       });
     } else if (
       document.documentElement.scrollTop < 100 ||
       document.body.scrollTop < 100
     ) {
       this.setState({
-        color: "navbar-transparent"
+        color: "navbar-transparent",
       });
     }
   };
   toggleCollapse = () => {
     document.documentElement.classList.toggle("nav-open");
     this.setState({
-      collapseOpen: !this.state.collapseOpen
+      collapseOpen: !this.state.collapseOpen,
     });
   };
   onCollapseExiting = () => {
     this.setState({
-      collapseOut: "collapsing-out"
+      collapseOut: "collapsing-out",
     });
   };
   onCollapseExited = () => {
     this.setState({
-      collapseOut: ""
+      collapseOut: "",
     });
   };
   render() {
@@ -88,11 +88,7 @@ class PagesNavbar extends React.Component {
       >
         <Container>
           <div className="navbar-translate">
-            <NavbarBrand
-              to="/"
-              id="navbar-brand"
-              tag={Link}
-            >
+            <NavbarBrand to="/" id="navbar-brand" tag={Link}>
               <span>BLK• </span>
               Design System React
             </NavbarBrand>
@@ -119,7 +115,7 @@ class PagesNavbar extends React.Component {
             <div className="navbar-collapse-header">
               <Row>
                 <Col className="collapse-brand" xs="6">
-                  <a href="#pablo" onClick={e => e.preventDefault()}>
+                  <a href="#pablo" onClick={(e) => e.preventDefault()}>
                     BLK•React
                   </a>
                 </Col>
