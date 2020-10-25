@@ -97,200 +97,247 @@ const Home = () => {
             className="path"
             src={require("assets/img/path4.png")}
           />
-          <Container className="align-items-center">
-            <Row>
-              <Col lg="6" md="6">
-                <h1 className="profile-title text-left">Nipun David</h1>
-                <h5 className="text-on-back">01</h5>
-                <p className="profile-description">
-                  Hi, Welcome to my website. After compeleting engineering I
-                  started as a game developer and then switched gear to
-                  Augmented Reality and Virtual Reality. Currently I am working
-                  at Nagarro where I got chance to expand my horizon and I was
-                  able to add few other skills in my resume. Here you will find
-                  the glimpse of what I have learned so far during my time in IT
-                  industry.
-                </p>
+          <section className="section">
+            <Container className="align-items-center">
+              <Row>
+                <Col lg="6" md="6">
+                  <h1 className="profile-title text-left">Nipun David</h1>
+                  <h5 className="text-on-back">01</h5>
+                  <p className="profile-description">
+                    Hi, Welcome to my website. After compeleting engineering I
+                    started as a game developer and then switched gear to
+                    Augmented Reality and Virtual Reality. Currently I am
+                    working at Nagarro where I got chance to expand my horizon
+                    and I was able to add few other skills in my resume. Here
+                    you will find the glimpse of what I have learned so far
+                    during my time in IT industry.
+                  </p>
 
-                <div className="btn-wrapper profile pt-3">
-                  <Button
-                    className="btn-icon btn-round"
-                    color="twitter"
-                    href="https://www.linkedin.com/in/nipundavid/"
-                    id="tooltip639225725"
-                    target="_blank"
-                  >
-                    <i className="fab fa-linkedin" />
-                  </Button>
-                  <UncontrolledTooltip delay={0} target="tooltip639225725">
-                    Let's connect on LinkedIn
-                  </UncontrolledTooltip>
-                  <Button
-                    className="btn-icon btn-round"
-                    color="medium"
-                    href="https://medium.com/@nipundavid"
-                    id="tooltip982846143"
-                    target="_blank"
-                  >
-                    <i className="fab fa-medium" />
-                  </Button>
-                  <UncontrolledTooltip delay={0} target="tooltip982846143">
-                    Take me to Medium
-                  </UncontrolledTooltip>
-                  <Button
-                    className="btn-icon btn-round"
-                    color="instagram"
-                    href="https://www.instagram.com/david_the_great_nipun/"
-                    id="tooltip951161185"
-                    target="_blank"
-                  >
-                    <i className="fab fa-instagram" />
-                  </Button>
-                  <UncontrolledTooltip delay={0} target="tooltip951161185">
-                    Follow on Instagram
-                  </UncontrolledTooltip>
-                </div>
-              </Col>
-              <Col className="ml-auto mr-auto" lg="4" md="6">
-                <Card className="card-coin card-plain">
-                  <CardHeader>
-                    <img
-                      alt="..."
-                      className="img-center img-fluid rounded-circle"
-                      src={require("assets/img/mike.png")}
-                    />
-                    <h4 className="title">Skills Snapshot</h4>
-                  </CardHeader>
-                  <CardBody>
-                    <Nav
-                      className="nav-tabs-primary justify-content-center"
-                      tabs
+                  <div className="btn-wrapper profile pt-3">
+                    <Button
+                      className="btn-icon btn-round"
+                      color="twitter"
+                      href="https://www.linkedin.com/in/nipundavid/"
+                      id="tooltip639225725"
+                      target="_blank"
                     >
-                      <NavItem>
-                        <NavLink
-                          className={classnames({
-                            active: tabs === 1,
-                          })}
-                          onClick={(e) => toggleTabs(e, 1)}
-                          href="#pablo"
-                        >
-                          XR
-                        </NavLink>
-                      </NavItem>
-                      <NavItem>
-                        <NavLink
-                          className={classnames({
-                            active: tabs === 2,
-                          })}
-                          onClick={(e) => toggleTabs(e, 2)}
-                          href="#pablo"
-                        >
-                          Web
-                        </NavLink>
-                      </NavItem>
-                      <NavItem>
-                        <NavLink
-                          className={classnames({
-                            active: tabs === 3,
-                          })}
-                          onClick={(e) => toggleTabs(e, 3)}
-                          href="#pablo"
-                        >
-                          Tools
-                        </NavLink>
-                      </NavItem>
-                    </Nav>
-                    {/* <TabContent
-                      className="tab-subcategories"
-                      activeTab={"tab" + tabs}
+                      <i className="fab fa-linkedin" />
+                    </Button>
+                    <UncontrolledTooltip delay={0} target="tooltip639225725">
+                      Let's connect on LinkedIn
+                    </UncontrolledTooltip>
+                    <Button
+                      className="btn-icon btn-round"
+                      color="medium"
+                      href="https://medium.com/@nipundavid"
+                      id="tooltip982846143"
+                      target="_blank"
                     >
-                      <TabPane tabId="tab1">
-                        <Table className="tablesorter" responsive>
-                          <thead className="text-primary">
-                            <tr>
-                              <th className="header">COIN</th>
-                              <th className="header">AMOUNT</th>
-                              <th className="header">VALUE</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>BTC</td>
-                              <td>7.342</td>
-                              <td>48,870.75 USD</td>
-                            </tr>
-                            <tr>
-                              <td>ETH</td>
-                              <td>30.737</td>
-                              <td>64,53.30 USD</td>
-                            </tr>
-                            <tr>
-                              <td>XRP</td>
-                              <td>19.242</td>
-                              <td>18,354.96 USD</td>
-                            </tr>
-                          </tbody>
-                        </Table>
-                      </TabPane>
-                      <TabPane tabId="tab2">
-                        <Row>
-                          <Label sm="3">Pay to</Label>
-                          <Col sm="9">
-                            <FormGroup>
-                              <Input
-                                placeholder="e.g. 1Nasd92348hU984353hfid"
-                                type="text"
-                              />
-                              <FormText color="default" tag="span">
-                                Please enter a valid address.
-                              </FormText>
-                            </FormGroup>
-                          </Col>
-                        </Row>
-                        <Row>
-                          <Label sm="3">Amount</Label>
-                          <Col sm="9">
-                            <FormGroup>
-                              <Input placeholder="1.587" type="text" />
-                            </FormGroup>
-                          </Col>
-                        </Row>
-                        <Button
-                          className="btn-simple btn-icon btn-round float-right"
-                          color="primary"
-                          type="submit"
-                        >
-                          <i className="tim-icons icon-send" />
-                        </Button>
-                      </TabPane>
-                      <TabPane tabId="tab3">
-                        <Table className="tablesorter" responsive>
-                          <thead className="text-primary">
-                            <tr>
-                              <th className="header">Latest Crypto News</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>The Daily: Nexo to Pay on Stable...</td>
-                            </tr>
-                            <tr>
-                              <td>Venezuela Begins Public of Nation...</td>
-                            </tr>
-                            <tr>
-                              <td>PR: BitCanna – Dutch Blockchain...</td>
-                            </tr>
-                          </tbody>
-                        </Table>
-                      </TabPane>
-                    </TabContent> */}
-                  </CardBody>
-                </Card>
-              </Col>
-            </Row>
-          </Container>
+                      <i className="fab fa-medium" />
+                    </Button>
+                    <UncontrolledTooltip delay={0} target="tooltip982846143">
+                      Take me to Medium
+                    </UncontrolledTooltip>
+                    <Button
+                      className="btn-icon btn-round"
+                      color="instagram"
+                      href="https://www.instagram.com/david_the_great_nipun/"
+                      id="tooltip951161185"
+                      target="_blank"
+                    >
+                      <i className="fab fa-instagram" />
+                    </Button>
+                    <UncontrolledTooltip delay={0} target="tooltip951161185">
+                      Follow on Instagram
+                    </UncontrolledTooltip>
+                  </div>
+                </Col>
+                <Col className="ml-auto mr-auto" lg="4" md="6">
+                  <Card className="card-coin card-plain">
+                    <CardHeader>
+                      <img
+                        alt="..."
+                        className="img-center img-fluid rounded-circle"
+                        src={require("assets/img/mike.png")}
+                      />
+                      <h4 className="title">Skills Snapshot</h4>
+                    </CardHeader>
+                    <CardBody>
+                      <Nav
+                        className="nav-tabs-primary justify-content-center"
+                        tabs
+                      >
+                        <NavItem>
+                          <NavLink
+                            className={classnames({
+                              active: tabs === 1,
+                            })}
+                            onClick={(e) => toggleTabs(e, 1)}
+                            href="#pablo"
+                          >
+                            XR
+                          </NavLink>
+                        </NavItem>
+                        <NavItem>
+                          <NavLink
+                            className={classnames({
+                              active: tabs === 2,
+                            })}
+                            onClick={(e) => toggleTabs(e, 2)}
+                            href="#pablo"
+                          >
+                            Web
+                          </NavLink>
+                        </NavItem>
+                        <NavItem>
+                          <NavLink
+                            className={classnames({
+                              active: tabs === 3,
+                            })}
+                            onClick={(e) => toggleTabs(e, 3)}
+                            href="#pablo"
+                          >
+                            Tools
+                          </NavLink>
+                        </NavItem>
+                      </Nav>
+                      <TabContent
+                        className="tab-subcategories"
+                        activeTab={"tab" + tabs}
+                      >
+                        <TabPane tabId="tab1">
+                          <Table className="tablesorter" responsive>
+                            <tbody>
+                              <tr>
+                                <td>Mobile AR</td>
+                                <td>
+                                  <img
+                                    alt="..."
+                                    className="img-center img-fluid shadow-lg"
+                                    src={require("assets/img/arcore.png")}
+                                  />
+                                </td>
+                                <td>
+                                  <img
+                                    alt="..."
+                                    className="img-center img-fluid shadow-lg "
+                                    src={require("assets/img/arkit.png")}
+                                  />
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>HMD</td>
+                                <td>
+                                  <img
+                                    alt="..."
+                                    className="img-center img-fluid shadow-lg"
+                                    src={require("assets/img/hololens.png")}
+                                  />
+                                </td>
+                                <td>
+                                  <img
+                                    alt="..."
+                                    className="img-center img-fluid shadow-lg "
+                                    src={require("assets/img/oculus.png")}
+                                  />
+                                </td>
+                              </tr>
+                            </tbody>
+                          </Table>
+                        </TabPane>
+                        <TabPane tabId="tab2">
+                          <Table>
+                            <tbody>
+                              <tr>
+                                <td>Server End</td>
+                                <td>
+                                  <img
+                                    alt="..."
+                                    className="img-center img-fluid shadow-lg badge-neutral"
+                                    src={require("assets/img/node.png")}
+                                  />
+                                </td>
+                                <td>
+                                  <img
+                                    alt="..."
+                                    className="img-center img-fluid shadow-lg badge-neutral"
+                                    src={require("assets/img/ExpressJS.png")}
+                                  />
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Front End</td>
+                                <td>
+                                  <img
+                                    alt="..."
+                                    className="img-center img-fluid shadow-lg"
+                                    src={require("assets/img/react.png")}
+                                  />
+                                </td>
+                                <td>
+                                  <img
+                                    alt="..."
+                                    className="img-center img-fluid shadow-lg"
+                                    src={require("assets/img/babylonjs.png")}
+                                  />
+                                </td>
+                              </tr>
+                            </tbody>
+                          </Table>
+                        </TabPane>
+                        <TabPane tabId="tab3">
+                          <Table>
+                            <tbody>
+                              <tr>
+                                <td>3D Engine</td>
+                                <td>
+                                  <img
+                                    alt="..."
+                                    className="img-center img-fluid shadow-lg"
+                                    src={require("assets/img/unity3D.png")}
+                                  />
+                                </td>
+                                <td>
+                                  <img
+                                    alt="..."
+                                    className="img-center img-fluid shadow-lg"
+                                    src={require("assets/img/unreal.png")}
+                                  />
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>IDE</td>
+                                <td>
+                                  <img
+                                    alt="..."
+                                    className="img-center img-fluid shadow-lg"
+                                    src={require("assets/img/vscode.png")}
+                                  />
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>Misc</td>
+                                <td>
+                                  <img
+                                    alt="..."
+                                    className="img-center img-fluid shadow-lg"
+                                    src={require("assets/img/blender.png")}
+                                  />
+                                </td>
+                              </tr>
+                            </tbody>
+                          </Table>
+                        </TabPane>
+                      </TabContent>
+                    </CardBody>
+                  </Card>
+                </Col>
+              </Row>
+            </Container>
+          </section>
         </div>
-        <div className="section">
+        <section className="section">
           <Container>
             <Row className="justify-content-between">
               <Col md="6">
@@ -320,7 +367,7 @@ const Home = () => {
               </Col>
             </Row>
           </Container>
-        </div>
+        </section>
         <section className="section">
           <Container>
             <Row>

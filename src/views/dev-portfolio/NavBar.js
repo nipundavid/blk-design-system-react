@@ -116,7 +116,7 @@ const NavBar = () => {
             </NavItem>
             <NavItem>
               <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
-                Showcase
+                Projects
               </NavLink>
             </NavItem>
             <NavItem>
