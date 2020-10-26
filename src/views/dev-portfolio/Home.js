@@ -39,6 +39,15 @@ const Home = () => {
       }
     }
     document.body.classList.toggle("profile-page");
+
+    return function cleanup() {
+      if (navigator.platform.indexOf("Win") > -1) {
+        ps.destroy();
+        document.documentElement.className += " perfect-scrollbar-off";
+        document.documentElement.classList.remove("perfect-scrollbar-on");
+      }
+      document.body.classList.toggle("profile-page");
+    };
   }, []);
 
   const carouselItems = [
