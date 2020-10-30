@@ -345,8 +345,7 @@ const Home = () => {
                   <Button
                     className="btn-simple"
                     color="primary"
-                    href="#pablo"
-                    onClick={(e) => e.preventDefault()}
+                    href="/projects"
                   >
                     <i className="tim-icons icon-bulb-63" /> See More
                   </Button>

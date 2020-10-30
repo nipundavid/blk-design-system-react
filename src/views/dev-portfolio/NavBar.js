@@ -110,7 +110,7 @@ const NavBar = () => {
           </div>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="/blogs">Blogs</NavLink>
+              <NavLink href="/projects">Projects</NavLink>
             </NavItem>
           </Nav>
           <Nav navbar>
