@@ -26,6 +26,9 @@ const NavBar = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", changeColor);
+    return function cleanup() {
+      window.removeEventListener("scroll", changeColor);
+    };
   }, []);
 
   const changeColor = () => {
@@ -110,7 +113,7 @@ const NavBar = () => {
           </div>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="/projects">Projects</NavLink>
+              <NavLink href="/all-projects">Projects</NavLink>
             </NavItem>
           </Nav>
           <Nav navbar>

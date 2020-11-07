@@ -1,0 +1,17 @@
+{
+"companyName": "Nipun David",
+"productName": "ColorJump3D",
+"productVersion": "0.1",
+"dataUrl": "build.data.unityweb",
+"wasmCodeUrl": "build.wasm.code.unityweb",
+"wasmFrameworkUrl": "build.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"backgroundUrl": "build.jpg",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#FFFFFF",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.3.15f1"
+}

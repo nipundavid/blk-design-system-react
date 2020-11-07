@@ -28,7 +28,8 @@ import LandingPage from "views/examples/LandingPage.js";
 import RegisterPage from "views/examples/RegisterPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
 import Home from "views/dev-portfolio/Home";
-import Projects from "views/dev-portfolio/Projects";
+import ProjectsPage from "views/dev-portfolio/ProjectsPage";
+import Project from "views/projects/Project";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -49,8 +50,11 @@ ReactDOM.render(
       <Route path="/home">
         <Home />
       </Route>
-      <Route path="/projects">
-        <Projects />
+      <Route path="/all-projects">
+        <ProjectsPage />
+      </Route>
+      <Route path="/project">
+        <Project />
       </Route>
       <Redirect from="/" to="/home" />
     </Switch>
