@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import classnames from "classnames";
+import { myProjects } from "../../Model/projects";
+import { CreateProjectCards } from "../../views/dev-portfolio/ProjectCard";
 import {
   Button,
   Card,
@@ -52,46 +54,13 @@ const ProjectsPage = () => {
             />
             <Container>
               <Row>
-                <Col md="4">
-                  <Card className="card-coin card-plain">
-                    <CardBody>
-                      <Row></Row>
-                      <Row>
-                        <Col>
-                          <img
-                            alt="..."
-                            className="img-center  img-fluid rounded-square shadow-lg"
-                            src={require("assets/img/mike.png")}
-                          />
-                        </Col>
-                        <Col className="text-center" md="12">
-                          <span>
-                            <br />
-                            <h4 className="text-uppercase">Light Coin</h4>
-                          </span>
-                          <span>Plan</span>
-                          <hr className="line-primary" />
-                        </Col>
-                      </Row>
-                      <Row>
-                        <ListGroup>
-                          <ListGroupItem>
-                            safdhslidfhsbsvbs asdfsafg asdfksadfglsiugh akljfha
-                            aifba sia avvbahvsdvigvsad asjdv ksdvsakv isa
-                            sadvsluv5 3svsvjo
-                          </ListGroupItem>
-                          <ListGroupItem>100 emails</ListGroupItem>
-                          <ListGroupItem>24/7 Support</ListGroupItem>
-                        </ListGroup>
-                      </Row>
-                    </CardBody>
-                    <CardFooter className="text-center">
-                      <Button className="btn-simple" color="primary">
-                        Get plan
-                      </Button>
-                    </CardFooter>
-                  </Card>
-                </Col>
+                {myProjects.map((project) => {
+                  return (
+                    <Col md="4">
+                      <CreateProjectCards project={project} />
+                    </Col>
+                  );
+                })}
               </Row>
             </Container>
           </section>
