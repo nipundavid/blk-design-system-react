@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import YouTube from "react-youtube";
 import {
   Button,
   Card,
@@ -24,7 +25,7 @@ export const CreateProjectCards = ({ project }) => {
               <img
                 alt="..."
                 className="img-center  img-fluid rounded-square shadow-lg"
-                src={require("assets/img/mike.png")}
+                src={require("assets/img/thumb_ColorJump3D.jpg")}
               />
             </Col>
             <Col className="text-center" md="12">
