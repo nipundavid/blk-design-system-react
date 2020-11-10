@@ -345,7 +345,7 @@ const Home = () => {
                   <Button
                     className="btn-simple"
                     color="primary"
-                    href="/projects"
+                    href="/all-projects"
                   >
                     <i className="tim-icons icon-bulb-63" /> See More
                   </Button>
