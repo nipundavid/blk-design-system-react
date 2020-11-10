@@ -1,28 +1,20 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
-import classnames from "classnames";
 import { myProjects } from "../../Model/projects";
 import { CreateProjectCards } from "../../views/dev-portfolio/ProjectCard";
-import {
-  Button,
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  CardImg,
-  CardTitle,
-  ListGroupItem,
-  ListGroup,
-  Container,
-  Row,
-  Col,
-} from "reactstrap";
+import { Button, Modal, Container, Row, Col } from "reactstrap";
 import NavBar from "views/dev-portfolio/NavBar";
 import Footer from "components/Footer/Footer.js";
 import {} from "components/Footer/Footer.js";
 
 const ProjectsPage = () => {
   const history = useHistory();
+  const [modalState, setModalState] = useState(false);
+
+  const toggleModal = () => {
+    let _modalState = modalState;
+    setModalState(!_modalState);
+  };
 
   useEffect(() => {
     document.body.classList.toggle("profile-page");
@@ -56,14 +48,50 @@ const ProjectsPage = () => {
               <Row>
                 {myProjects.map((project) => {
                   return (
-                    <Col md="4">
-                      <CreateProjectCards project={project} />
+                    <Col md="4" key={project.id}>
+                      <CreateProjectCards
+                        project={project}
+                        toggleModal={toggleModal}
+                      />
                     </Col>
                   );
                 })}
               </Row>
             </Container>
           </section>
+          <Modal
+            modalClassName="modal-mini modal-primary modal-mini"
+            isOpen={modalState}
+            toggle={() => toggleModal()}
+          >
+            <div className="modal-header justify-content-center">
+              <button className="close" onClick={() => toggleModal()}>
+                <i className="tim-icons icon-simple-remove text-white" />
+              </button>
+              <div className="modal-profile">
+                <i className="tim-icons icon-sound-wave" />
+              </div>
+            </div>
+            <div className="modal-body">
+              <p>
+                Thanks for your interest in my projects, but the work after this
+                is under development
+              </p>
+            </div>
+            <div className="modal-footer">
+              <Button className="btn-neutral" color="link" type="button">
+                Back
+              </Button>
+              <Button
+                className="btn-neutral"
+                color="link"
+                onClick={() => toggleModal()}
+                type="button"
+              >
+                Close
+              </Button>
+            </div>
+          </Modal>
         </div>
         <Footer />
       </div>

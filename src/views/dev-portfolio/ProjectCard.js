@@ -1,41 +1,37 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 import YouTube from "react-youtube";
 import {
   Button,
   Card,
-  CardHeader,
   CardBody,
   CardFooter,
-  CardImg,
-  CardTitle,
   ListGroupItem,
   ListGroup,
-  Container,
   Row,
   Col,
 } from "reactstrap";
 
-export const CreateProjectCards = ({ project }) => {
+export const CreateProjectCards = (props) => {
   return (
     <div>
-      <Card className="card-coin card-plain">
+      <Card className="card-coin card-plain" key={props.project.id}>
         <CardBody>
           <Row>
             <Col className="text-center">
               <img
                 alt="..."
-                className="img-center  img-fluid rounded-square shadow-lg"
-                src={require("assets/img/thumb_ColorJump3D.jpg")}
+                className="project-thumb  img-fluid rounded-square shadow-lg"
+                src={props.project.thumbImage}
               />
             </Col>
             <Col className="text-center" md="12">
               <span>
                 <br />
-                <h4 className="text-uppercase">{project.projectName}</h4>
+                <h4 className="text-uppercase">{props.project.projectName}</h4>
               </span>
               <span>
-                {project.tags.map((tag) => {
-                  return <div>{tag}</div>;
+                {props.project.tags.map((tag) => {
+                  return <div key={tag}>{tag}</div>;
                 })}
               </span>
               <hr className="line-primary" />
@@ -46,19 +42,23 @@ export const CreateProjectCards = ({ project }) => {
               <ListGroupItem className="text-center">
                 {" "}
                 <div className="text-primary">About: </div>
-                {project.shortDescription}
+                {props.project.shortDescription}
               </ListGroupItem>
               <ListGroupItem className="text-center ">
                 <div className="text-primary">Tech Stack :</div>
-                {project.techStack.map((ts) => {
-                  return <div>{ts}</div>;
+                {props.project.techStack.map((ts) => {
+                  return <div key={ts}>{ts}</div>;
                 })}
               </ListGroupItem>
             </ListGroup>
           </Row>
         </CardBody>
         <CardFooter className="text-center">
-          <Button className="btn-simple" color="primary">
+          <Button
+            className="btn-simple"
+            color="primary"
+            onClick={() => props.toggleModal()}
+          >
             Show More
           </Button>
         </CardFooter>

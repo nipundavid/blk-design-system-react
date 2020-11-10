@@ -25,11 +25,6 @@ const Project = () => {
     };
   }, []);
 
-  const unityContent = new UnityContent(
-    "MyGame/Build.json",
-    "MyGame/UnityLoader.js"
-  );
-
   return (
     <>
       {/* <NavBar /> */}
@@ -48,25 +43,6 @@ const Project = () => {
               src={require("assets/img/path4.png")}
             />
             <Container>
-              {/* <Row className="row-grid justify-content-between align-items-center text-left">
-                <Col className="offset-lg-0 offset-md-3" lg="4" md="6">
-                  <Card className="card-register">
-                    <CardHeader>
-                      <CardImg
-                        alt="..."
-                        src={require("assets/img/square-purple-1.png")}
-                      />
-                      <CardTitle tag="h4">Register</CardTitle>
-                    </CardHeader>
-                    <CardBody></CardBody>
-                    <CardFooter>
-                      <Button className="btn-round" color="primary" size="lg">
-                        Show More
-                      </Button>
-                    </CardFooter>
-                  </Card>
-                </Col>
-              </Row> */}
               <ColorJump3D></ColorJump3D>
             </Container>
           </section>
