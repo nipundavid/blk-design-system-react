@@ -73,7 +73,7 @@ const Home = () => {
     <>
       <NavBar />
       <div className="wrapper">
-        <div className="page-header">
+        <div className="page-header content-center">
           <img
             alt="..."
             className="dots"

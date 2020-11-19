@@ -33,7 +33,7 @@ export const myProjects = [
     id: 4,
     projectName: "360 Viewer",
     thumbImage: require("assets/img/thumb_360xp.png"),
-    techStack: ["ReactJS, BabylonJS, HTML,"],
+    techStack: ["ReactJS, BabylonJS, HTML"],
     tags: ["#360 #VR #3d"],
     shortDescription:
       "The project aims to create immersive experience with the help of 360-degree photographs",

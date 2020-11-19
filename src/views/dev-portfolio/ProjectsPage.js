@@ -6,14 +6,21 @@ import { Button, Modal, Container, Row, Col } from "reactstrap";
 import NavBar from "views/dev-portfolio/NavBar";
 import Footer from "components/Footer/Footer.js";
 import {} from "components/Footer/Footer.js";
+import { setProjectName } from "../../redux";
+import { connect } from "react-redux";
 
-const ProjectsPage = () => {
+const ProjectsPage = (props) => {
   const history = useHistory();
   const [modalState, setModalState] = useState(false);
 
   const toggleModal = () => {
     let _modalState = modalState;
     setModalState(!_modalState);
+  };
+
+  const UpdateProjectData = () => {
+    props.setProjectName();
+    console.log(props.projectName);
   };
 
   useEffect(() => {
@@ -51,7 +58,7 @@ const ProjectsPage = () => {
                     <Col md="4" key={project.id}>
                       <CreateProjectCards
                         project={project}
-                        toggleModal={toggleModal}
+                        toggleModal={UpdateProjectData}
                       />
                     </Col>
                   );
@@ -99,4 +106,16 @@ const ProjectsPage = () => {
   );
 };
 
-export default ProjectsPage;
+const mapStateToProps = (state) => {
+  return {
+    projectName: state.projectName,
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    setProjectName: () => dispatch(setProjectName()),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(ProjectsPage);

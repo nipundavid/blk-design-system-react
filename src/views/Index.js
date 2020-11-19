@@ -17,23 +17,10 @@
 */
 import React from "react";
 
-// core components
-import IndexNavbar from "components/Navbars/IndexNavbar.js";
-import PageHeader from "components/PageHeader/PageHeader.js";
-import Footer from "components/Footer/Footer.js";
-
-// sections for this page/view
-import Basics from "views/IndexSections/Basics.js";
-import Navbars from "views/IndexSections/Navbars.js";
-import Tabs from "views/IndexSections/Tabs.js";
-import Pagination from "views/IndexSections/Pagination.js";
-import Notifications from "views/IndexSections/Notifications.js";
-import Typography from "views/IndexSections/Typography.js";
-import JavaScript from "views/IndexSections/JavaScript.js";
-import NucleoIcons from "views/IndexSections/NucleoIcons.js";
-import Signup from "views/IndexSections/Signup.js";
-import Examples from "views/IndexSections/Examples.js";
-import Download from "views/IndexSections/Download.js";
+import Home from "views/dev-portfolio/Home";
+import ProjectsPage from "views/dev-portfolio/ProjectsPage";
+import Project from "views/projects/Project";
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
 class Index extends React.Component {
   componentDidMount() {
@@ -44,26 +31,22 @@ class Index extends React.Component {
   }
   render() {
     return (
-      <>
-        <IndexNavbar />
-        <div className="wrapper">
-          <PageHeader />
-          <div className="main">
-            <Basics />
-            <Navbars />
-            <Tabs />
-            <Pagination />
-            <Notifications />
-            <Typography />
-            <JavaScript />
-            <NucleoIcons />
-            <Signup />
-            <Examples />
-            <Download />
-          </div>
-          <Footer />
-        </div>
-      </>
+      <div>
+        <BrowserRouter>
+          <Switch>
+            <Route path="/home">
+              <Home />
+            </Route>
+            <Route path="/all-projects">
+              <ProjectsPage />
+            </Route>
+            <Route path="/project">
+              <Project />
+            </Route>
+            <Redirect from="/" to="/home" />
+          </Switch>
+        </BrowserRouter>
+      </div>
     );
   }
 }

@@ -27,7 +27,7 @@ const Project = () => {
 
   return (
     <>
-      {/* <NavBar /> */}
+      <NavBar />
       <div className="wrapper">
         <div className="content-center">
           <section className="section"></section>
@@ -47,7 +47,7 @@ const Project = () => {
             </Container>
           </section>
         </div>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </>
   );
