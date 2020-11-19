@@ -114,7 +114,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    setProjectName: () => dispatch(setProjectName()),
+    setProjectName: () => dispatch(setProjectName("Euraka")),
   };
 };
 

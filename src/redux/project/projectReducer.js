@@ -8,7 +8,7 @@ const projectReducer = (state = initialState, action) => {
     case PROJECT_NAME:
       return {
         ...state,
-        projectName: "colorJump",
+        projectName: action.payload,
       };
     default:
       return state;
