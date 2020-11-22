@@ -57,7 +57,7 @@ export const CreateProjectCards = (props) => {
           <Button
             className="btn-simple"
             color="primary"
-            // onClick={() => props.UpdateProjectData(props.project.id)}
+            onClick={() => props.UpdateProjectData(props.project.id)}
           >
             Show More
           </Button>
