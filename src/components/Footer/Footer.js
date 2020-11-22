@@ -36,7 +36,7 @@ class Footer extends React.Component {
         <Container>
           <div className="btn-wrapper profile">
             <div className="d-flex justify-content-center">
-              <h3 className="title">Thanks for stoping by</h3>
+              <h3 className="title">Thanks for stopping by</h3>
             </div>
             <div className="d-flex justify-content-center">
               <Button

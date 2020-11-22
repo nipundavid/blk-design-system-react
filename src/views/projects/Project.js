@@ -16,10 +16,13 @@ import {
 import NavBar from "views/dev-portfolio/NavBar";
 import Footer from "components/Footer/Footer.js";
 import ColorJump3D from "./ColorJump3d";
+import { connect } from "react-redux";
 
-const Project = () => {
+const Project = (props) => {
   useEffect(() => {
     document.body.classList.toggle("profile-page");
+    window.scrollTo(0, 0);
+    console.log(props.projectId);
     return function cleanup() {
       document.body.classList.toggle("profile-page");
     };
@@ -52,5 +55,9 @@ const Project = () => {
     </>
   );
 };
-
-export default Project;
+const mapStateToProps = (state) => {
+  return {
+    projectId: state.projectId,
+  };
+};
+export default connect(mapStateToProps)(Project);

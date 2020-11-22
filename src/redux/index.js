@@ -1,1 +1,1 @@
-export { setProjectName } from "./project/projectAction";
+export { setProjectId } from "./project/projectAction";
