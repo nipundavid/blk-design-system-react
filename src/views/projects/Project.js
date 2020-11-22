@@ -33,22 +33,19 @@ const Project = (props) => {
       <NavBar />
       <div className="wrapper">
         <div className="content-center">
-          <section className="section"></section>
-          <section className="section">
-            <img
-              alt="..."
-              className="dots"
-              src={require("assets/img/dots.png")}
-            />
-            <img
-              alt="..."
-              className="path"
-              src={require("assets/img/path4.png")}
-            />
-            <Container>
-              <ColorJump3D></ColorJump3D>
-            </Container>
-          </section>
+          <img
+            alt="..."
+            className="dots"
+            src={require("assets/img/dots.png")}
+          />
+          <img
+            alt="..."
+            className="path"
+            src={require("assets/img/path4.png")}
+          />
+          <Container>
+            <ColorJump3D></ColorJump3D>
+          </Container>
         </div>
         <Footer />
       </div>

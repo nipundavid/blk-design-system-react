@@ -30,7 +30,7 @@ const ColorJump3D = () => {
   return (
     <>
       <div className="wrapper">
-        <div className="content-center">
+        <div className="content-center page-header ">
           <section className="section">
             <Container>
               <Row className="justify-content-between">
@@ -54,108 +54,106 @@ const ColorJump3D = () => {
               </Row>
             </Container>
           </section>
-          <section>
-            <Container>
-              <Row className="justify-content-center">
-                <Col lg="8" md="12">
-                  <h1 className="title text-primary ">Live Demo</h1>
-                  <h4 className="description">
-                    Click on play icon and press left click or space key
-                  </h4>
-                </Col>
-              </Row>
-              <div className="wrapper">
-                <Unity unityContent={unityContent} />
-              </div>{" "}
-            </Container>
-          </section>
-          <section className="section">
-            <Container>
-              <Row className="justify-content-md-center">
-                <Col className="text-center" lg="8" md="12">
-                  <h2 className="title">
-                    Did you like this hyper-casual game?
-                  </h2>
-                  <h4 className="description">
-                    Cause if you do, it can be yours. Hit the button below to
-                    navigate to marketplace where you can find unity3D package
-                    for this game
-                  </h4>
-                </Col>
-                <Col className="text-center" lg="8" md="12">
-                  <Button
-                    className="btn-round"
-                    color="primary"
-                    href="https://assetstore.unity.com/packages/templates/color-jump-3d-63099?aid=1101lNJe&utm_source=aff"
-                    role="button"
-                    size="lg"
-                    target="_blank"
-                  >
-                    Buy Now
-                  </Button>
-                </Col>
-              </Row>
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <Row className="row-grid align-items-center my-md">
-                <Col lg="6">
-                  <br />
-                  <h3 className="text-info font-weight-light mb-2">
-                    Thank you for your interest!
-                  </h3>
-                  <h4 className="mb-0 font-weight-light">
-                    Let's get in touch on any of these platforms.
-                  </h4>
-                </Col>
-                <Col className="text-lg-right btn-wrapper" lg="6">
-                  <br />
-                  <Button
-                    className="btn-icon btn-round"
-                    color="twitter"
-                    id="twitter"
-                    size="lg"
-                    href="https://twitter.com/nipundavid"
-                    target="_blank"
-                  >
-                    <i className="fab fa-twitter" />
-                  </Button>
-                  <UncontrolledTooltip delay={0} target="twitter">
-                    Tweet!
-                  </UncontrolledTooltip>
-                  <Button
-                    className="btn-icon btn-round"
-                    color="linkedin"
-                    id="linkedin"
-                    size="lg"
-                    href=" https://www.linkedin.com/in/nipundavid/"
-                    target="_blank"
-                  >
-                    <i className="fab fa-linkedin" />
-                  </Button>
-                  <UncontrolledTooltip delay={0} target="linkedin">
-                    Let's connect!
-                  </UncontrolledTooltip>
-                  <Button
-                    className="btn-icon btn-round"
-                    color="github"
-                    href="https://github.com/nipundavid"
-                    id="tooltip877922017"
-                    size="lg"
-                    target="_blank"
-                  >
-                    <i className="fab fa-github" />
-                  </Button>
-                  <UncontrolledTooltip delay={0} target="tooltip877922017">
-                    What I am doing these days
-                  </UncontrolledTooltip>
-                </Col>
-              </Row>
-            </Container>
-          </section>
         </div>
+        <section>
+          <Container>
+            <Row className="justify-content-center">
+              <Col lg="8" md="12">
+                <h1 className="title text-primary ">Live Demo</h1>
+                <h4 className="description">
+                  Click on play icon and press left click or space key
+                </h4>
+              </Col>
+            </Row>
+            <div>
+              <Unity unityContent={unityContent} />
+            </div>
+          </Container>
+        </section>
+        <section className="section">
+          <Container>
+            <Row className="justify-content-md-center">
+              <Col className="text-center" lg="8" md="12">
+                <h2 className="title">Did you like this hyper-casual game?</h2>
+                <h4 className="description">
+                  Cause if you do, it can be yours. Hit the button below to
+                  navigate to marketplace where you can find unity3D package for
+                  this game
+                </h4>
+              </Col>
+              <Col className="text-center" lg="8" md="12">
+                <Button
+                  className="btn-round"
+                  color="primary"
+                  href="https://assetstore.unity.com/packages/templates/color-jump-3d-63099?aid=1101lNJe&utm_source=aff"
+                  role="button"
+                  size="lg"
+                  target="_blank"
+                >
+                  Buy Now
+                </Button>
+              </Col>
+            </Row>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <Row className="row-grid align-items-center my-md">
+              <Col lg="6">
+                <br />
+                <h3 className="text-info font-weight-light mb-2">
+                  Thank you for your interest!
+                </h3>
+                <h4 className="mb-0 font-weight-light">
+                  Let's get in touch on any of these platforms.
+                </h4>
+              </Col>
+              <Col className="text-lg-right btn-wrapper" lg="6">
+                <br />
+                <Button
+                  className="btn-icon btn-round"
+                  color="twitter"
+                  id="twitter"
+                  size="lg"
+                  href="https://twitter.com/nipundavid"
+                  target="_blank"
+                >
+                  <i className="fab fa-twitter" />
+                </Button>
+                <UncontrolledTooltip delay={0} target="twitter">
+                  Tweet!
+                </UncontrolledTooltip>
+                <Button
+                  className="btn-icon btn-round"
+                  color="linkedin"
+                  id="linkedin"
+                  size="lg"
+                  href=" https://www.linkedin.com/in/nipundavid/"
+                  target="_blank"
+                >
+                  <i className="fab fa-linkedin" />
+                </Button>
+                <UncontrolledTooltip delay={0} target="linkedin">
+                  Let's connect!
+                </UncontrolledTooltip>
+                <Button
+                  className="btn-icon btn-round"
+                  color="github"
+                  href="https://github.com/nipundavid"
+                  id="tooltip877922017"
+                  size="lg"
+                  target="_blank"
+                >
+                  <i className="fab fa-github" />
+                </Button>
+                <UncontrolledTooltip delay={0} target="tooltip877922017">
+                  What I am doing these days
+                </UncontrolledTooltip>
+              </Col>
+            </Row>
+          </Container>
+        </section>
       </div>
     </>
   );

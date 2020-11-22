@@ -12,7 +12,7 @@ import { connect } from "react-redux";
 const ProjectsPage = (props) => {
   const history = useHistory();
 
-  const UpdateProjectData = (projectId) => {
+  const _UpdateProjectData = (projectId) => {
     props.setProjectId(projectId);
     history.push("/project");
     console.log(props.projectId);
@@ -24,10 +24,6 @@ const ProjectsPage = (props) => {
       document.body.classList.toggle("profile-page");
     };
   }, []);
-
-  function OpenProject() {
-    history.push("/project");
-  }
 
   return (
     <>
@@ -53,7 +49,7 @@ const ProjectsPage = (props) => {
                     <Col md="4" key={project.id}>
                       <CreateProjectCards
                         project={project}
-                        UpdateProjectData={UpdateProjectData}
+                        UpdateProjectData={_UpdateProjectData}
                       />
                     </Col>
                   );
