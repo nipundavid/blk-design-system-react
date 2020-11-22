@@ -16,6 +16,7 @@ import {
 import NavBar from "views/dev-portfolio/NavBar";
 import Footer from "components/Footer/Footer.js";
 import ColorJump3D from "./ColorJump3d";
+import ShadowRun from "./ShadowRun";
 import { connect } from "react-redux";
 
 const Project = (props) => {
@@ -45,6 +46,7 @@ const Project = (props) => {
           />
           <Container>
             <ColorJump3D></ColorJump3D>
+            {/* <ShadowRun></ShadowRun> */}
           </Container>
         </div>
         <Footer />
