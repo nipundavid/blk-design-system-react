@@ -16,17 +16,21 @@ const ShadowRun = () => {
 
   const carouselItems = [
     {
-      src: require("assets/img/color-jump-3d/unity-screenshot-1.PNG"),
+      src: require("assets/img/shadow-run/shadow-run-1.png"),
       altText: "",
       caption: "",
     },
-    {
-      src: require("assets/img/color-jump-3d/unity-screenshot-2.PNG"),
-      altText: "",
-      caption: "",
-    },
+    // {
+    //   src: require("assets/img/shadow-run/shadow-run-1.png"),
+    //   altText: "",
+    //   caption: "",
+    // },
   ];
 
+  const styleObject = {
+    height: "720px",
+    width: "50%",
+  };
   return (
     <>
       <div className="wrapper">
@@ -35,20 +39,24 @@ const ShadowRun = () => {
             <Container>
               <Row className="justify-content-between">
                 <Col md="6">
-                  <h1 className="profile-title text-left">Color Jump 3D</h1>
+                  <h1 className="profile-title text-left">Shadow Run</h1>
                   <h5 className="text-on-back">about</h5>
                   <p className="profile-description text-left">
-                    While creating this game, I had this thought in my mind that
-                    it has to be hyper-casual and since I am not very good at
-                    game art tools I had to come up with a minimalist theme
-                    given that I hardly get time to work on my projects I
-                    generally decide to go with primitive mesh and be creative
-                    with what the tool has to offer
+                    It took me just a weekend to conceptualize, plan and develop
+                    this game. It was the summer of 2016, my best friend
+                    challenged me to create something cool in just a weekend. At
+                    the time shadow bases games were doing well on play-store, I
+                    thought let's do something with 2D shadows and this was the
+                    outcome on Sunday evening.
                   </p>
                 </Col>
                 <Col md="6">
                   <Row className="justify-content-between align-items-center">
-                    <UncontrolledCarousel items={carouselItems} />
+                    <UncontrolledCarousel
+                      items={carouselItems}
+                      height="20%"
+                      width="10%"
+                    />
                   </Row>
                 </Col>
               </Row>
@@ -65,8 +73,13 @@ const ShadowRun = () => {
                 </h4>
               </Col>
             </Row>
-            <div>
-              <Unity unityContent={unityContent} height="730px" width="480px" />
+            {/* <div style={styleObject} className="justify-content-between">
+              <div></div>
+            </div> */}
+            <div className="d-flex justify-content-center">
+              <div style={styleObject}>
+                <Unity unityContent={unityContent} />
+              </div>
             </div>
           </Container>
         </section>
@@ -85,7 +98,7 @@ const ShadowRun = () => {
                 <Button
                   className="btn-round"
                   color="primary"
-                  href="https://assetstore.unity.com/packages/templates/color-jump-3d-63099?aid=1101lNJe&utm_source=aff"
+                  href="https://assetstore.unity.com/packages/templates/shadow-run-62561"
                   role="button"
                   size="lg"
                   target="_blank"
