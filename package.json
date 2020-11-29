@@ -32,6 +32,10 @@
   },
   "homepage": "http://localhost/",
   "dependencies": {
+    "@babylonjs/core": "^4.2.0",
+    "@babylonjs/gui": "^4.2.0",
+    "@babylonjs/loaders": "^4.2.0",
+    "@babylonjs/materials": "^4.2.0",
     "chart.js": "2.9.3",
     "classnames": "2.2.6",
     "gulp": "4.0.2",
@@ -41,6 +45,7 @@
     "nouislider": "14.2.0",
     "perfect-scrollbar": "1.5.0",
     "react": "16.13.1",
+    "react-babylonjs": "^2.3.2",
     "react-bootstrap-switch": "15.5.3",
     "react-chartjs-2": "2.9.0",
     "react-datetime": "2.16.3",

@@ -5,7 +5,9 @@ import Footer from "components/Footer/Footer.js";
 import ColorJump3D from "./ColorJump3d";
 import ShadowRun from "./ShadowRun";
 import { ReUsableUIForUnity3D } from "./ReUsableUIForUnity3D";
+import _360Viewer from "./_360Viewer";
 import { connect } from "react-redux";
+import { Redirect } from "react-router-dom";
 
 const Project = (props) => {
   const [projectId, setProjectId] = useState(1);
@@ -27,8 +29,10 @@ const Project = (props) => {
         return <ShadowRun></ShadowRun>;
       case 3:
         return <ReUsableUIForUnity3D></ReUsableUIForUnity3D>;
+      case 4:
+        return <_360Viewer></_360Viewer>;
       default:
-        return <ColorJump3D></ColorJump3D>;
+        return <Redirect to="/all-projects" />;
     }
   };
 
