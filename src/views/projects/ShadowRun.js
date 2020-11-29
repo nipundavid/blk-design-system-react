@@ -69,7 +69,7 @@ const ShadowRun = () => {
               <Col lg="8" md="12">
                 <h1 className="title text-primary ">Live Demo</h1>
                 <h4 className="description">
-                  Click on play icon and press left click or space key
+                  Use left and right arrow key on your keyboard to play
                 </h4>
               </Col>
             </Row>

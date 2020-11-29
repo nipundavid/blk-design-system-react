@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from "react";
-import Unity, { UnityContent } from "react-unity-webgl";
-import classnames from "classnames";
 import { Container } from "reactstrap";
 import NavBar from "views/dev-portfolio/NavBar";
 import Footer from "components/Footer/Footer.js";
 import ColorJump3D from "./ColorJump3d";
 import ShadowRun from "./ShadowRun";
+import { ReUsableUIForUnity3D } from "./ReUsableUIForUnity3D";
 import { connect } from "react-redux";
-import { Switch } from "react-router-dom";
 
 const Project = (props) => {
   const [projectId, setProjectId] = useState(1);
@@ -27,6 +25,8 @@ const Project = (props) => {
         return <ColorJump3D></ColorJump3D>;
       case 2:
         return <ShadowRun></ShadowRun>;
+      case 3:
+        return <ReUsableUIForUnity3D></ReUsableUIForUnity3D>;
       default:
         return <ColorJump3D></ColorJump3D>;
     }
@@ -47,11 +47,7 @@ const Project = (props) => {
             className="path"
             src={require("assets/img/path4.png")}
           />
-          <Container>
-            {/* <ColorJump3D></ColorJump3D> */}
-            {renderProject(projectId)}
-            {/* <ShadowRun></ShadowRun> */}
-          </Container>
+          <Container>{renderProject(projectId)}</Container>
         </div>
         <Footer />
       </div>

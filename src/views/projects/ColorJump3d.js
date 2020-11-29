@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Unity, { UnityContent } from "react-unity-webgl";
 import {
   Button,
@@ -61,7 +61,7 @@ const ColorJump3D = () => {
               <Col lg="8" md="12">
                 <h1 className="title text-primary ">Live Demo</h1>
                 <h4 className="description">
-                  Click on play icon and press left click or space key
+                  Click on play icon and use mouse click or space key to jump
                 </h4>
               </Col>
             </Row>
