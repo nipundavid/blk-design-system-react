@@ -44,6 +44,7 @@
     "node-sass": "4.13.1",
     "nouislider": "14.2.0",
     "perfect-scrollbar": "1.5.0",
+    "qrcode.react": "^1.0.0",
     "react": "16.13.1",
     "react-babylonjs": "^2.3.2",
     "react-bootstrap-switch": "15.5.3",

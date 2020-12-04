@@ -8,6 +8,7 @@ import {
   UncontrolledCarousel,
 } from "reactstrap";
 import PhotoDome from "./BabylonJSPlayground/PhotoDome";
+var QRCode = require("qrcode.react");
 const _360Viewer = () => {
   const carouselItems = [
     {
@@ -66,7 +67,7 @@ const _360Viewer = () => {
               </Col>
             </Row>
             <Row className="justify-content-md-center">
-              <Col className="text-left">
+              <Col className="text-center">
                 <h4 className="description">f-Fullscreen v-VR e-Exit</h4>
               </Col>
             </Row>
