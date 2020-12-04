@@ -30,15 +30,14 @@ const _360Viewer = () => {
             <Container>
               <Row className="justify-content-between">
                 <Col md="6">
-                  <h1 className="profile-title text-left">Color Jump 3D</h1>
+                  <h1 className="profile-title text-left">360 Walkthrough</h1>
                   <h5 className="text-on-back">about</h5>
                   <p className="profile-description text-left">
-                    While creating this game, I had this thought in my mind that
-                    it has to be hyper-casual and since I am not very good at
-                    game art tools I had to come up with a minimalist theme
-                    given that I hardly get time to work on my projects I
-                    generally decide to go with primitive mesh and be creative
-                    with what the tool has to offer
+                    This is something similar to one of the very early
+                    assignments I did when I started working on AR and VR using
+                    Unity3D. But these kind of experience makes more sense for
+                    the web unless you are for the VR but hey! now web support
+                    VR too with the help of OpenXR and WebXR
                   </p>
                 </Col>
                 <Col md="6">
@@ -56,13 +55,19 @@ const _360Viewer = () => {
               <Col lg="8" md="12">
                 <h1 className="title text-primary ">Live Demo</h1>
                 <h4 className="description">
-                  Click on play icon and use mouse click or space key to jump
+                  Click & drag mouse on image to rotate and select PoI - Point
+                  of Interst, to navigate and see information
                 </h4>
               </Col>
             </Row>
             <Row className="justify-content-md-center">
-              <Col className="text-center" lg="8" md="12">
+              <Col className="text-center">
                 <PhotoDome />
+              </Col>
+            </Row>
+            <Row className="justify-content-md-center">
+              <Col className="text-left">
+                <h4 className="description">f-Fullscreen v-VR e-Exit</h4>
               </Col>
             </Row>
           </Container>
@@ -71,23 +76,22 @@ const _360Viewer = () => {
           <Container>
             <Row className="justify-content-md-center">
               <Col className="text-center" lg="8" md="12">
-                <h2 className="title">Did you like this hyper-casual game?</h2>
+                <h2 className="title">Did you like this Virtual Walkthrough</h2>
                 <h4 className="description">
-                  Cause if you do, it can be yours. Hit the button below to
-                  navigate to marketplace where you can find unity3D package for
-                  this game
+                  Cause if you do, and you have something like this in mind that
+                  you want to built, I can help you with it
                 </h4>
               </Col>
               <Col className="text-center" lg="8" md="12">
                 <Button
                   className="btn-round"
                   color="primary"
-                  href="https://assetstore.unity.com/packages/templates/color-jump-3d-63099?aid=1101lNJe&utm_source=aff"
+                  href="https://www.codementor.io/@nipundavid"
                   role="button"
                   size="lg"
                   target="_blank"
                 >
-                  Buy Now
+                  Contact Now
                 </Button>
               </Col>
             </Row>
