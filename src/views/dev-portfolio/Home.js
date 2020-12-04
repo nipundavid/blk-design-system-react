@@ -339,7 +339,8 @@ const Home = () => {
                   Although I am working in XR for last couple of years but I
                   have a soft corner for game development. That's why I like
                   reading and learning more about computer graphics and 3D.
-                  Apart from XR, I have fair hands on experience of the web.
+                  Apart from XR and 3D, I am trying to get hands on experience
+                  of the web.
                 </p>
                 <div className="btn-wrapper pt-3">
                   <Button

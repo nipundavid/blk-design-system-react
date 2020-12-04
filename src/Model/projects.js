@@ -39,14 +39,4 @@ export const myProjects = [
       "Virtual walkthrough that gives immersive experience with the help of 360-degree photographs",
     longDescription: "",
   },
-  {
-    id: 5,
-    projectName: "3D Product Visualizer",
-    thumbImage: require("assets/img/thumb_360xp.png"),
-    techStack: ["ReactJS, BabylonJS, HTML"],
-    tags: ["#360 #VR #3d"],
-    shortDescription:
-      "Virtual walkthrough that gives immersive experience with the help of 360-degree photographs",
-    longDescription: "",
-  },
 ];
