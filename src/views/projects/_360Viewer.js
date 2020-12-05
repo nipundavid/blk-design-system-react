@@ -12,12 +12,12 @@ var QRCode = require("qrcode.react");
 const _360Viewer = () => {
   const carouselItems = [
     {
-      src: require("assets/img/color-jump-3d/unity-screenshot-1.PNG"),
+      src: require("assets/img/babyonjs/babylonjs-1.png"),
       altText: "",
       caption: "",
     },
     {
-      src: require("assets/img/color-jump-3d/unity-screenshot-2.PNG"),
+      src: require("assets/img/babyonjs/babylonjs-2.png"),
       altText: "",
       caption: "",
     },

@@ -1,10 +1,13 @@
 import React from "react";
 import { Engine, Scene } from "react-babylonjs";
 import * as BABYLON from "@babylonjs/core/Legacy/legacy";
+import "@babylonjs/core/Debug/debugLayer";
+import "@babylonjs/inspector";
 import "./style.css";
 const PhotoDome = () => {
   const onSceneMount = (event) => {
     const { scene, canvas } = event;
+    scene.debugLayer.show();
     var camera = new BABYLON.ArcRotateCamera(
       "Camera",
       -Math.PI / 2,
