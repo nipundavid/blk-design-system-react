@@ -46,6 +46,7 @@ import RegisterPage from "views/examples/RegisterPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
 import Home from "views/dev-portfolio/Home";
 import ProjectsPage from "views/dev-portfolio/ProjectsPage";
+import BlogList from "views/blogs/BlogList";
 import Project from "views/projects/Project";
 import { Provider } from "react-redux";
 import store from "./redux/store";
@@ -72,6 +73,9 @@ ReactDOM.render(
         </Route>
         <Route path="/all-projects">
           <ProjectsPage />
+        </Route>
+        <Route path="/all-blogs">
+          <BlogList />
         </Route>
         <Route path="/project">
           <Project />

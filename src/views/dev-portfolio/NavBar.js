@@ -115,6 +115,9 @@ const NavBar = () => {
             <NavItem>
               <NavLink href="/all-projects">Projects</NavLink>
             </NavItem>
+            <NavItem>
+              <NavLink href="/all-blogs">Blogs</NavLink>
+            </NavItem>
           </Nav>
           <Nav navbar>
             <UncontrolledDropdown nav>

@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import { myProjects } from "../../Model/projects";
 import { CreateProjectCards } from "../../views/dev-portfolio/ProjectCard";
 import { Container, Row, Col } from "reactstrap";
 import NavBar from "views/dev-portfolio/NavBar";
 import Footer from "components/Footer/Footer.js";
-import {} from "components/Footer/Footer.js";
 import { setProjectId } from "../../redux";
 import { connect } from "react-redux";
 

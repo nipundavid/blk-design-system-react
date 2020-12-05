@@ -32,7 +32,9 @@ const _360Viewer = () => {
               <Row className="justify-content-between">
                 <Col md="6">
                   <h1 className="profile-title text-left">360 Walkthrough</h1>
+                  <br />
                   <h5 className="text-on-back">about</h5>
+
                   <p className="profile-description text-left">
                     This is something similar to one of the very early
                     assignments I did when I started working on AR and VR using
