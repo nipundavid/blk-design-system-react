@@ -1,13 +1,13 @@
 import React from "react";
 import { Engine, Scene } from "react-babylonjs";
 import * as BABYLON from "@babylonjs/core/Legacy/legacy";
-import "@babylonjs/core/Debug/debugLayer";
-import "@babylonjs/inspector";
+// import "@babylonjs/core/Debug/debugLayer";
+// import "@babylonjs/inspector";
 import "./style.css";
 const PhotoDome = () => {
   const onSceneMount = (event) => {
     const { scene, canvas } = event;
-    scene.debugLayer.show();
+    // scene.debugLayer.show();
     var camera = new BABYLON.ArcRotateCamera(
       "Camera",
       -Math.PI / 2,
@@ -21,6 +21,7 @@ const PhotoDome = () => {
     var dome = new BABYLON.PhotoDome(
       "360",
       "assets/ESO_Paranal_360_Marcio_Cabral_Chile_07-CC.jpg",
+      // "assets/potw1130a.jpg",
       {
         resolution: 32,
         size: 1000,
