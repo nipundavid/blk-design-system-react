@@ -25,7 +25,7 @@ const Project = (props) => {
 
   const renderProject = (param) => {
     switch (param) {
-      case 1:
+      case 5:
         return <ColorJump3D></ColorJump3D>;
       case 2:
         return <ShadowRun></ShadowRun>;
@@ -33,7 +33,7 @@ const Project = (props) => {
         return <ReUsableUIForUnity3D></ReUsableUIForUnity3D>;
       case 4:
         return <_360Viewer></_360Viewer>;
-      case 5:
+      case 1:
         return <KitchenDesigner></KitchenDesigner>;
       case 6:
         return <ShadowJump></ShadowJump>;

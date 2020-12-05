@@ -15,7 +15,6 @@ const ProjectsPage = (props) => {
   const _UpdateProjectData = (projectId) => {
     props.setProjectId(projectId);
     history.push("/project");
-    console.log(props.projectId);
   };
 
   useEffect(() => {
