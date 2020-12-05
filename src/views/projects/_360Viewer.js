@@ -36,9 +36,10 @@ const _360Viewer = () => {
                   <p className="profile-description text-left">
                     This is something similar to one of the very early
                     assignments I did when I started working on AR and VR using
-                    Unity3D. But these kind of experience makes more sense for
-                    the web unless you are for the VR but hey! now web support
-                    VR too with the help of OpenXR and WebXR
+                    Unity3D.
+                    <br /> But these kind of experience makes more sense for the
+                    web unless you are for the VR but hey! now web support VR
+                    too with the help of OpenXR and WebXR
                   </p>
                 </Col>
                 <Col md="6">
@@ -87,7 +88,7 @@ const _360Viewer = () => {
                 <Button
                   className="btn-round"
                   color="primary"
-                  href="https://www.codementor.io/@nipundavid"
+                  href="https://www.linkedin.com/in/nipundavid/"
                   role="button"
                   size="lg"
                   target="_blank"
@@ -96,8 +97,6 @@ const _360Viewer = () => {
                 </Button>
               </Col>
             </Row>
-            <br />
-            <br />
             <br />
             <br />
             <br />

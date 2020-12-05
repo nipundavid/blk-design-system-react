@@ -8,23 +8,23 @@ import {
   UncontrolledTooltip,
   UncontrolledCarousel,
 } from "reactstrap";
-const ShadowRun = () => {
+const ShadowJump = () => {
   const unityContent = new UnityContent(
-    "ShadowRun/Build/build.json",
-    "ShadowRun/Build/UnityLoader.js"
+    "ShadowJump/Build/build.json",
+    "ShadowJump/Build/UnityLoader.js"
   );
 
   const carouselItems = [
     {
-      src: require("assets/img/shadow-run/shadow-run-1.png"),
+      src: require("assets/img/shadow-jump/shadow-jump-1.png"),
       altText: "",
       caption: "",
     },
-    // {
-    //   src: require("assets/img/shadow-run/shadow-run-1.png"),
-    //   altText: "",
-    //   caption: "",
-    // },
+    {
+      src: require("assets/img/shadow-jump/shadow-jump-2.png"),
+      altText: "",
+      caption: "",
+    },
   ];
 
   const styleObject = {
@@ -39,15 +39,14 @@ const ShadowRun = () => {
             <Container>
               <Row className="justify-content-between">
                 <Col md="6">
-                  <h1 className="profile-title text-left">Shadow Run</h1>
+                  <h1 className="profile-title text-left">Shadow Jump</h1>
                   <h5 className="text-on-back">about</h5>
                   <p className="profile-description text-left">
-                    It took me just a weekend to conceptualize, plan and develop
-                    this game. It was the summer of 2016, my best friend
-                    challenged me to create something cool in just a weekend.
-                    <br /> At the time shadow bases games were doing well on
-                    play-store, I thought let's do something with 2D shadows and
-                    this was the outcome on Sunday evening.
+                    One of my another edition in the hyper casual games. And
+                    yeah I was obsessed with 2D-Shadows by this time. <br />I
+                    wanted to re-skin this game and use chicken and eggs for the
+                    theme but due to lack of 3D art I published this game as it
+                    is.
                   </p>
                 </Col>
                 <Col md="6">
@@ -69,7 +68,7 @@ const ShadowRun = () => {
               <Col lg="8" md="12">
                 <h1 className="title text-primary ">Live Demo</h1>
                 <h4 className="description">
-                  Use left and right arrow key on your keyboard to play
+                  Use single click to jump and double click to reach next floor
                 </h4>
               </Col>
             </Row>
@@ -98,7 +97,7 @@ const ShadowRun = () => {
                 <Button
                   className="btn-round"
                   color="primary"
-                  href="https://assetstore.unity.com/packages/templates/shadow-run-62561"
+                  href="https://assetstore.unity.com/packages/templates/shadow-jump-dash-63818"
                   role="button"
                   size="lg"
                   target="_blank"
@@ -170,4 +169,4 @@ const ShadowRun = () => {
   );
 };
 
-export default ShadowRun;
+export default ShadowJump;

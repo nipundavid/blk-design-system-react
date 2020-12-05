@@ -16,7 +16,7 @@ export const myProjects = [
     techStack: ["Unity3D, C#, PhotoShop, Blender3d"],
     tags: ["#game #unity3D #3d"],
     shortDescription:
-      "Save your balls from spikes and enjoy party music. Game-play is mind boggling with single tap on left and right of the screen",
+      "Save your balls from spikes and enjoy party music. Gameplay is mind boggling with single tap on left/right of the screen",
     longDescription: "",
   },
   {
@@ -37,6 +37,26 @@ export const myProjects = [
     tags: ["#360 #VR #3d"],
     shortDescription:
       "Virtual walkthrough that gives immersive experience with the help of 360-degree photographs",
+    longDescription: "",
+  },
+  {
+    id: 5,
+    projectName: "3D Kitchen Designer",
+    thumbImage: require("assets/img/thumb_kitchen-designer.png"),
+    techStack: ["Unity3D, C#, Blender3d"],
+    tags: ["#3d #app #utility"],
+    shortDescription:
+      "3D kitchen designer to visualize any modern kitchen, this same can be used for designing the warehouse, modern homes etc.",
+    longDescription: "",
+  },
+  {
+    id: 6,
+    projectName: "Shadow Jump",
+    thumbImage: require("assets/img/thumb_ShadowJump.png"),
+    techStack: ["Unity3D, C#, PhotoShop"],
+    tags: ["#game #unity3D #3d"],
+    shortDescription:
+      "Tap/click to avoid the spikes, and double tap/click to reach next level. This game is another Hyper-casual game in my list",
     longDescription: "",
   },
 ];

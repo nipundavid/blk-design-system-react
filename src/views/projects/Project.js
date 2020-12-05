@@ -5,7 +5,9 @@ import Footer from "components/Footer/Footer.js";
 import ColorJump3D from "./ColorJump3d";
 import ShadowRun from "./ShadowRun";
 import { ReUsableUIForUnity3D } from "./ReUsableUIForUnity3D";
+import ShadowJump from "./ShadowJump";
 import _360Viewer from "./_360Viewer";
+import KitchenDesigner from "./KitchenDesigner";
 import { connect } from "react-redux";
 import { Redirect } from "react-router-dom";
 
@@ -31,6 +33,10 @@ const Project = (props) => {
         return <ReUsableUIForUnity3D></ReUsableUIForUnity3D>;
       case 4:
         return <_360Viewer></_360Viewer>;
+      case 5:
+        return <KitchenDesigner></KitchenDesigner>;
+      case 6:
+        return <ShadowJump></ShadowJump>;
       default:
         return <Redirect to="/all-projects" />;
     }
