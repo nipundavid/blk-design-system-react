@@ -27,7 +27,7 @@ export const CreateProjectCards = (props) => {
             <Col className="text-center" md="12">
               <span>
                 <br />
-                <h4 className="text-uppercase">{props.project.projectName}</h4>
+                <h4 className="text-capitalize">{props.project.projectName}</h4>
               </span>
               <span>
                 {props.project.tags.map((tag) => {
