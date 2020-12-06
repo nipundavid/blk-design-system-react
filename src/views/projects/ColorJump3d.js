@@ -97,8 +97,6 @@ const ColorJump3D = () => {
             <br />
             <br />
             <br />
-            <br />
-            <br />
             <Row className="row-grid align-items-center my-md">
               <Col lg="6">
                 <br />
