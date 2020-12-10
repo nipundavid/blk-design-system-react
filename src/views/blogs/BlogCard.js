@@ -56,13 +56,17 @@ export const BlogCard = (props) => {
         </CardBody>
         <CardFooter className="text-center">
           <Button
-            className="btn-simple"
-            color="primary"
+            // className="btn-simple"
+            // color="primary"
             // onClick={() => props.UpdateProjectData(props.project.id)}
             href={props.blog.guid}
             target="_blank"
           >
-            Show More
+            {" "}
+            Read on
+            <br />
+            <i className="fab fa-medium" />
+            edium
           </Button>
         </CardFooter>
       </Card>
