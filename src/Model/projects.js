@@ -1,6 +1,16 @@
 export const myProjects = [
   {
     id: 1,
+    projectName: "99 Cars",
+    thumbImage: require("assets/img/thumb_99-cars.png"),
+    techStack: ["Unity3D, C#, PhotoShop"],
+    tags: ["#2d #game #hyper-casual"],
+    shortDescription:
+      "Hyper casual game to make you mind tick every second. 99 cars to play with each with amazing look",
+    longDescription: "",
+  },
+  {
+    id: 2,
     projectName: "3D Kitchen Designer",
     thumbImage: require("assets/img/thumb_kitchen-designer.png"),
     techStack: ["Unity3D, C#, Blender3d"],
@@ -10,7 +20,7 @@ export const myProjects = [
     longDescription: "",
   },
   {
-    id: 2,
+    id: 3,
     projectName: "Shadow Run",
     thumbImage: require("assets/img/thumb_ShadowRun.png"),
     techStack: ["Unity3D, C#, PhotoShop, Blender3d"],
@@ -20,7 +30,7 @@ export const myProjects = [
     longDescription: "",
   },
   {
-    id: 3,
+    id: 4,
     projectName: "Re-Usable UI For Unity3D",
     thumbImage: require("assets/img/thumb_ReUsableUIForUnity3D.png"),
     techStack: ["Unity3D, C#"],
@@ -30,7 +40,7 @@ export const myProjects = [
     longDescription: "",
   },
   {
-    id: 4,
+    id: 5,
     projectName: "360 Viewer",
     thumbImage: require("assets/img/thumb_360xp.png"),
     techStack: ["ReactJS, BabylonJS, HTML"],
@@ -41,7 +51,7 @@ export const myProjects = [
   },
 
   {
-    id: 5,
+    id: 6,
     projectName: "Color Jump 3D",
     thumbImage: require("assets/img/thumb_ColorJump3D.jpg"),
     techStack: ["Unity3D, C#, PhotoShop, Blender3d"],
@@ -51,13 +61,23 @@ export const myProjects = [
     longDescription: "",
   },
   {
-    id: 6,
+    id: 7,
     projectName: "Shadow Jump",
     thumbImage: require("assets/img/thumb_ShadowJump.png"),
     techStack: ["Unity3D, C#, PhotoShop"],
     tags: ["#game #unity3D #3d"],
     shortDescription:
       "Tap/click to avoid the spikes, and double tap/click to reach next level. This game is another Hyper-casual game in my list",
+    longDescription: "",
+  },
+  {
+    id: 8,
+    projectName: "Microservice101 (gRPC +RabbitMQ + Kafka)",
+    thumbImage: require("assets/img/thumb_ServicesAndMiddleware.png"),
+    techStack: ["NodeJS, ReactJS, gRPC, RabbitMQ, Kafka"],
+    tags: ["#enterprise #middleware #microservices"],
+    shortDescription:
+      "This is microservice getting started template using NodeJS, which can be used to as a base app for any web-app",
     longDescription: "",
   },
 ];

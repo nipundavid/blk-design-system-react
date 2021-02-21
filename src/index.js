@@ -50,7 +50,9 @@ import BlogList from "views/blogs/BlogList";
 import ColorJump3d from "views/projects/ColorJump3d";
 import ShadowJump from "views/projects/ShadowJump";
 import ShadowRun from "views/projects/ShadowRun";
+import _99Cars from "views/projects/_99Cars";
 import { ReUsableUIForUnity3D } from "views/projects/ReUsableUIForUnity3D";
+import { ServicesAndMiddleware } from "views/projects/ServicesAndMiddleware";
 import _360Viewer from "views/projects/_360Viewer";
 import KitchenDesigner from "views/projects/KitchenDesigner";
 import { Provider } from "react-redux";
@@ -91,6 +93,9 @@ ReactDOM.render(
         <Route path="/reusable-UI-for-unity3D">
           <ReUsableUIForUnity3D />
         </Route>
+        <Route path="/microservice-101">
+          <ServicesAndMiddleware />
+        </Route>
         <Route path="/_360Viewer">
           <_360Viewer />
         </Route>
@@ -99,6 +104,9 @@ ReactDOM.render(
         </Route>
         <Route path="/shadow-jump">
           <ShadowJump />
+        </Route>
+        <Route path="/99-cars">
+          <_99Cars />
         </Route>
         <Redirect from="/" to="/home" />
       </Switch>
