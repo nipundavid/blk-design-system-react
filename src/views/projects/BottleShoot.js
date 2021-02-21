@@ -9,7 +9,7 @@ import {
   UncontrolledTooltip,
   UncontrolledCarousel,
 } from "reactstrap";
-const _99Cars = () => {
+const BottleShoot = () => {
   useEffect(() => {
     document.body.classList.toggle("profile-page");
     window.scrollTo(0, 0);
@@ -19,12 +19,7 @@ const _99Cars = () => {
   }, []);
   const carouselItems = [
     {
-      src: require("assets/img/99-cars/1.png"),
-      altText: "",
-      caption: "",
-    },
-    {
-      src: require("assets/img/99-cars/2.png"),
+      src: require("assets/img/bottle-shoot/1.png"),
       altText: "",
       caption: "",
     },
@@ -39,16 +34,15 @@ const _99Cars = () => {
             <Container>
               <Row className="justify-content-between">
                 <Col md="6">
-                  <h1 className="profile-title text-left">99 Cars</h1>
+                  <h1 className="profile-title text-left">Bottle Shoot</h1>
                   <h5 className="text-on-back">about</h5>
                   <br />
                   <p className="profile-description text-left">
-                    It was early time when I was just starting with hyper-casual
-                    games and wanted to create something really fun.
-                    <br />
-                    Me and my friend sat together one day and thought of
-                    creating a game we lots of gaming elements like XP, Sharing,
-                    leaderboards etc. And after a month this was the result
+                    Throw stuff and break some bottles in 3D. Use a remote, soda
+                    can, baseball, dart and many more to shoot and break bottles
+                    in a fixed time. <br />
+                    Break as many bottles as you can within the fixed time,
+                    create a high-score and unlock new items.
                   </p>
                 </Col>
                 <Col md="6">
@@ -85,7 +79,7 @@ const _99Cars = () => {
                   width: "100%",
                   height: "100%",
                 }}
-                src={`https://www.youtube.com/embed/y-RdwILXSPs`}
+                src={`https://www.youtube.com/embed/nXj2HA1x_yI`}
                 frameBorder="0"
               />
             </div>
@@ -97,16 +91,15 @@ const _99Cars = () => {
               <Col className="text-center" lg="8" md="12">
                 <h2 className="title">Did you like this game?</h2>
                 <h4 className="description">
-                  Cause if you do, it can be yours. Hit the button below to
-                  navigate to marketplace where you can find unity3D package for
-                  this game
+                  Cause if you do, and you have something like this in mind that
+                  you want to built, I can help you with it
                 </h4>
               </Col>
               <Col className="text-center" lg="8" md="12">
                 <Button
                   className="btn-round"
                   color="primary"
-                  href="https://www.sellmyapp.com/downloads/crossy-99-cars/"
+                  href="https://www.linkedin.com/in/nipundavid/"
                   role="button"
                   size="lg"
                   target="_blank"
@@ -179,4 +172,4 @@ const _99Cars = () => {
   );
 };
 
-export default _99Cars;
+export default BottleShoot;

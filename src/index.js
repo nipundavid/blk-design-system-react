@@ -51,6 +51,7 @@ import ColorJump3d from "views/projects/ColorJump3d";
 import ShadowJump from "views/projects/ShadowJump";
 import ShadowRun from "views/projects/ShadowRun";
 import _99Cars from "views/projects/_99Cars";
+import BottleShoot from "views/projects/BottleShoot";
 import { ReUsableUIForUnity3D } from "views/projects/ReUsableUIForUnity3D";
 import { ServicesAndMiddleware } from "views/projects/ServicesAndMiddleware";
 import _360Viewer from "views/projects/_360Viewer";
@@ -107,6 +108,9 @@ ReactDOM.render(
         </Route>
         <Route path="/99-cars">
           <_99Cars />
+        </Route>
+        <Route path="/bottle-shoot">
+          <BottleShoot />
         </Route>
         <Redirect from="/" to="/home" />
       </Switch>

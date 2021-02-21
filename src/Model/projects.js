@@ -11,6 +11,16 @@ export const myProjects = [
   },
   {
     id: 2,
+    projectName: "Bottle Shoot",
+    thumbImage: require("assets/img/thumb_bottleShoot.png"),
+    techStack: ["Unity3D, C#, PhotoShop, Blender3d"],
+    tags: ["#game #unity3D #3d"],
+    shortDescription:
+      "Throw stuff and break some bottles. Use a remote, soda can, baseball, dart and many more to shoot and break bottles in a fixed time.",
+    longDescription: "",
+  },
+  {
+    id: 3,
     projectName: "3D Kitchen Designer",
     thumbImage: require("assets/img/thumb_kitchen-designer.png"),
     techStack: ["Unity3D, C#, Blender3d"],
@@ -20,7 +30,7 @@ export const myProjects = [
     longDescription: "",
   },
   {
-    id: 3,
+    id: 4,
     projectName: "Shadow Run",
     thumbImage: require("assets/img/thumb_ShadowRun.png"),
     techStack: ["Unity3D, C#, PhotoShop, Blender3d"],
@@ -30,7 +40,7 @@ export const myProjects = [
     longDescription: "",
   },
   {
-    id: 4,
+    id: 5,
     projectName: "Re-Usable UI For Unity3D",
     thumbImage: require("assets/img/thumb_ReUsableUIForUnity3D.png"),
     techStack: ["Unity3D, C#"],
@@ -40,7 +50,7 @@ export const myProjects = [
     longDescription: "",
   },
   {
-    id: 5,
+    id: 6,
     projectName: "360 Viewer",
     thumbImage: require("assets/img/thumb_360xp.png"),
     techStack: ["ReactJS, BabylonJS, HTML"],
@@ -51,7 +61,7 @@ export const myProjects = [
   },
 
   {
-    id: 6,
+    id: 7,
     projectName: "Color Jump 3D",
     thumbImage: require("assets/img/thumb_ColorJump3D.jpg"),
     techStack: ["Unity3D, C#, PhotoShop, Blender3d"],
@@ -61,7 +71,7 @@ export const myProjects = [
     longDescription: "",
   },
   {
-    id: 7,
+    id: 8,
     projectName: "Shadow Jump",
     thumbImage: require("assets/img/thumb_ShadowJump.png"),
     techStack: ["Unity3D, C#, PhotoShop"],
@@ -71,7 +81,7 @@ export const myProjects = [
     longDescription: "",
   },
   {
-    id: 8,
+    id: 9,
     projectName: "Microservice101 (gRPC +RabbitMQ + Kafka)",
     thumbImage: require("assets/img/thumb_ServicesAndMiddleware.png"),
     techStack: ["NodeJS, ReactJS, gRPC, RabbitMQ, Kafka"],

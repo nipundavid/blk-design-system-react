@@ -22,18 +22,24 @@ const ProjectsPage = (props) => {
       case 1:
         return history.push("/99-cars");
       case 2:
-        return history.push("/kitchen-designer");
+        return history.push("/bottle-shoot");
+
       case 3:
-        return history.push("/shadow-run");
+        return history.push("/kitchen-designer");
+
       case 4:
-        return history.push("/reusable-UI-for-unity3D");
+        return history.push("/shadow-run");
+
       case 5:
-        return history.push("/_360Viewer");
+        return history.push("/reusable-UI-for-unity3D");
+
       case 6:
-        return history.push("/color-jump-3d");
+        return history.push("/_360Viewer");
       case 7:
-        return history.push("/shadow-jump");
+        return history.push("/color-jump-3d");
       case 8:
+        return history.push("/shadow-jump");
+      case 9:
         return history.push("/microservice-101");
       default:
         return <Redirect to="/all-projects" />;

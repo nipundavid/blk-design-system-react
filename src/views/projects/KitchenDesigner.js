@@ -118,7 +118,7 @@ const KitchenDesigner = () => {
             <Row className="justify-content-md-center">
               <Col className="text-center" lg="8" md="12">
                 <h2 className="title">
-                  Did you like this 3D Designer/Visualizer
+                  Did you like this 3D Designer/Visualizer?
                 </h2>
                 <h4 className="description">
                   Cause if you do, and you have something like this in mind that
