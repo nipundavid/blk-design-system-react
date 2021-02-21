@@ -49,7 +49,7 @@ class Footer extends React.Component {
                 <i className="fab fa-linkedin" />
               </Button>
               <UncontrolledTooltip delay={0} target="tooltip622135962">
-                Follow us
+                connect with me
               </UncontrolledTooltip>
               <Button
                 className="btn-icon btn-neutral btn-round btn-simple"
@@ -61,7 +61,7 @@ class Footer extends React.Component {
                 <i className="fab fa-medium" />
               </Button>
               <UncontrolledTooltip delay={0} target="tooltip230450801">
-                Like us
+                Give a clap
               </UncontrolledTooltip>
               <Button
                 className="btn-icon btn-neutral btn-round btn-simple"
@@ -73,7 +73,7 @@ class Footer extends React.Component {
                 <i className="fab fa-github" />
               </Button>
               <UncontrolledTooltip delay={0} target="tooltip318450378">
-                Follow us
+                Star a repo
               </UncontrolledTooltip>
             </div>
           </div>
