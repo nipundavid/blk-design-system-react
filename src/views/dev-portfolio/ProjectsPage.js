@@ -7,13 +7,33 @@ import NavBar from "views/dev-portfolio/NavBar";
 import Footer from "components/Footer/Footer.js";
 import { setProjectId } from "../../redux";
 import { connect } from "react-redux";
+import { Redirect } from "react-router-dom";
 
 const ProjectsPage = (props) => {
   const history = useHistory();
 
   const _UpdateProjectData = (projectId) => {
     props.setProjectId(projectId);
-    history.push("/project");
+    renderProject(projectId);
+  };
+
+  const renderProject = (param) => {
+    switch (param) {
+      case 5:
+        return history.push("/color-jump-3d");
+      case 2:
+        return history.push("/shadow-run");
+      case 3:
+        return history.push("/reusable-UI-for-unity3D");
+      case 4:
+        return history.push("/_360Viewer");
+      case 1:
+        return history.push("/kitchen-designer");
+      case 6:
+        return history.push("/shadow-jump");
+      default:
+        return <Redirect to="/all-projects" />;
+    }
   };
 
   useEffect(() => {

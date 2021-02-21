@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   Button,
   Container,
@@ -7,9 +7,18 @@ import {
   UncontrolledTooltip,
   UncontrolledCarousel,
 } from "reactstrap";
+import NavBar from "views/dev-portfolio/NavBar";
+import Footer from "components/Footer/Footer.js";
 import PhotoDome from "./BabylonJSPlayground/PhotoDome";
 var QRCode = require("qrcode.react");
 const _360Viewer = () => {
+  useEffect(() => {
+    document.body.classList.toggle("profile-page");
+    window.scrollTo(0, 0);
+    return function cleanup() {
+      document.body.classList.toggle("profile-page");
+    };
+  }, []);
   const carouselItems = [
     {
       src: require("assets/img/babyonjs/babylonjs-1.png"),
@@ -25,6 +34,7 @@ const _360Viewer = () => {
 
   return (
     <>
+      <NavBar />
       <div className="wrapper">
         <div className="content-center page-header ">
           <section className="section">
@@ -158,6 +168,7 @@ const _360Viewer = () => {
           </Container>
         </section>
       </div>
+      <Footer />
     </>
   );
 };

@@ -47,7 +47,12 @@ import ProfilePage from "views/examples/ProfilePage.js";
 import Home from "views/dev-portfolio/Home";
 import ProjectsPage from "views/dev-portfolio/ProjectsPage";
 import BlogList from "views/blogs/BlogList";
-import Project from "views/projects/Project";
+import ColorJump3d from "views/projects/ColorJump3d";
+import ShadowJump from "views/projects/ShadowJump";
+import ShadowRun from "views/projects/ShadowRun";
+import { ReUsableUIForUnity3D } from "views/projects/ReUsableUIForUnity3D";
+import _360Viewer from "views/projects/_360Viewer";
+import KitchenDesigner from "views/projects/KitchenDesigner";
 import { Provider } from "react-redux";
 import store from "./redux/store";
 
@@ -55,8 +60,8 @@ ReactDOM.render(
   <BrowserRouter>
     <Provider store={store}>
       <Switch>
-        <Route path="/components" render={(props) => <Index {...props} />} />
-        <Route
+        {/* <Route path="/components" render={(props) => <Index {...props} />} /> */}
+        {/* <Route
           path="/landing-page"
           render={(props) => <LandingPage {...props} />}
         />
@@ -67,7 +72,7 @@ ReactDOM.render(
         <Route
           path="/profile-page"
           render={(props) => <ProfilePage {...props} />}
-        />
+        /> */}
         <Route path="/home">
           <Home />
         </Route>
@@ -77,8 +82,23 @@ ReactDOM.render(
         <Route path="/all-blogs">
           <BlogList />
         </Route>
-        <Route path="/project">
-          <Project />
+        <Route path="/color-jump-3d">
+          <ColorJump3d />
+        </Route>
+        <Route path="/shadow-run">
+          <ShadowRun />
+        </Route>
+        <Route path="/reusable-UI-for-unity3D">
+          <ReUsableUIForUnity3D />
+        </Route>
+        <Route path="/_360Viewer">
+          <_360Viewer />
+        </Route>
+        <Route path="/kitchen-designer">
+          <KitchenDesigner />
+        </Route>
+        <Route path="/shadow-jump">
+          <ShadowJump />
         </Route>
         <Redirect from="/" to="/home" />
       </Switch>

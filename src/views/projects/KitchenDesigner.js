@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import NavBar from "views/dev-portfolio/NavBar";
+import Footer from "components/Footer/Footer.js";
 import {
   Button,
   Container,
@@ -8,6 +10,13 @@ import {
   UncontrolledCarousel,
 } from "reactstrap";
 const KitchenDesigner = () => {
+  useEffect(() => {
+    document.body.classList.toggle("profile-page");
+    window.scrollTo(0, 0);
+    return function cleanup() {
+      document.body.classList.toggle("profile-page");
+    };
+  }, []);
   const carouselItems = [
     {
       src: require("assets/img/kitchen-render/1.png"),
@@ -43,6 +52,7 @@ const KitchenDesigner = () => {
 
   return (
     <>
+      <NavBar />
       <div className="wrapper">
         <div className="content-center page-header ">
           <section className="section">
@@ -187,6 +197,7 @@ const KitchenDesigner = () => {
           </Container>
         </section>
       </div>
+      <Footer />
     </>
   );
 };

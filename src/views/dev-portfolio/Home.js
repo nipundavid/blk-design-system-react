@@ -25,6 +25,20 @@ import classnames from "classnames";
 import NavBar from "views/dev-portfolio/NavBar";
 import Footer from "components/Footer/Footer.js";
 import PerfectScrollbar from "perfect-scrollbar";
+import {
+  GitHub,
+  HackerRank,
+  Facebook,
+  StackOverflow,
+  LinkedIn,
+  Instagram,
+  GooglePlus,
+  Youtube,
+  Yahoo,
+  Twitch,
+  Twitter,
+  Skype,
+} from "react-profiles";
 
 const Home = () => {
   const [tabs, setTabs] = useState(1);
@@ -84,6 +98,7 @@ const Home = () => {
             className="path"
             src={require("assets/img/path4.png")}
           />
+
           <section className="section">
             <Container className="align-items-center ">
               <Row>

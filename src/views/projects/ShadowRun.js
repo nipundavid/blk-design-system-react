@@ -1,5 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import Unity, { UnityContent } from "react-unity-webgl";
+import NavBar from "views/dev-portfolio/NavBar";
+import Footer from "components/Footer/Footer.js";
 import {
   Button,
   Container,
@@ -9,6 +11,13 @@ import {
   UncontrolledCarousel,
 } from "reactstrap";
 const ShadowRun = () => {
+  useEffect(() => {
+    document.body.classList.toggle("profile-page");
+    window.scrollTo(0, 0);
+    return function cleanup() {
+      document.body.classList.toggle("profile-page");
+    };
+  }, []);
   const unityContent = new UnityContent(
     "ShadowRun/Build/build.json",
     "ShadowRun/Build/UnityLoader.js"
@@ -33,6 +42,7 @@ const ShadowRun = () => {
   };
   return (
     <>
+      <NavBar />
       <div className="wrapper">
         <div className="content-center page-header ">
           <section className="section">
@@ -166,6 +176,7 @@ const ShadowRun = () => {
           </Container>
         </section>
       </div>
+      <Footer />
     </>
   );
 };
